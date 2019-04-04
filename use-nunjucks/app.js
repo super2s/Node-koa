@@ -1,4 +1,5 @@
 const nunjucks = require('nunjucks');
+const path = require('path');
 
 function createEnv(path, opts) {
     var
@@ -22,7 +23,7 @@ function createEnv(path, opts) {
     return env;
 }
 
-var env = createEnv('./views', {
+var env = createEnv(path.resolve(__dirname,'views'), {
     watch: true,
     filters: {
         hex: function (n) {
