@@ -1,27 +1,25 @@
 const fs = require('fs');
 
-// add url-route in /controllers:
-
-function addMapping(router, mapping) {
+function addMapping(router,mapping) {
     for (var url in mapping) {
-        if (url.startsWith('GET ')) {
+        if (url.startsWith('GET')) {
             var path = url.substring(4);
             router.get(path, mapping[url]);
-            console.log(`register URL mapping: GET ${path}`);
-        } else if (url.startsWith('POST ')) {
+            console.log(`×¢²áURLÓ³Éä£º GET ${path}`);
+        } else if (url.startsWith(`POST`)) {
             var path = url.substring(5);
             router.post(path, mapping[url]);
-            console.log(`register URL mapping: POST ${path}`);
-        } else if (url.startsWith('PUT ')) {
+            console.group(`×¢²áURLÓ³Éä£º POST ${path}`);
+        } else if (url.startsWith('PUT')) {
             var path = url.substring(4);
             router.put(path, mapping[url]);
-            console.log(`register URL mapping: PUT ${path}`);
-        } else if (url.startsWith('DELETE ')) {
+            console.log(`×¢²áURLÓ³Éä: ${path}`);
+        } else if (url.startsWith('DELETE')) {
             var path = url.substring(7);
             router.del(path, mapping[url]);
-            console.log(`register URL mapping: DELETE ${path}`);
+            console.log(`×¢²áURLÓ³Éä£º DELETE ${path}`);
         } else {
-            console.log(`invalid URL: ${url}`);
+            console.log(`ÎÞÐ§µÄRUL£º${url}`);
         }
     }
 }
@@ -30,7 +28,7 @@ function addControllers(router, dir) {
     fs.readdirSync(__dirname + '/' + dir).filter((f) => {
         return f.endsWith('.js');
     }).forEach((f) => {
-        console.log(`process controller: ${f}...`);
+        console.log(`½ø³Ì¿ØÖÆÆ÷: ${f}...`);
         let mapping = require(__dirname + '/' + dir + '/' + f);
         addMapping(router, mapping);
     });

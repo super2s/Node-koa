@@ -1,4 +1,6 @@
 const nunjucks = require('nunjucks');
+const path = require('path');
+
 function createEnv(path, opts) {
     var 
         //控制输出是否被转义。
@@ -25,14 +27,20 @@ function createEnv(path, opts) {
     }
     return env;
 }
-
+var env = createEnv(path.resolve(__dirname,'views'), {
+        watch: true,
+        filters: {
+            hex: function (n) {
+                return '0x' + n.toString(16);
+            }
+        }
+    });
 function templating(path,opts) {
-    var env = createEnv(path,opts);
     return async (ctx, next) => {
         //给CTX绑定render函数
-        ctx.render = function (view, model) {
+        ctx.render = function (views, model) {
             //吧render后的内容赋值
-            ctx.response.body = env.render(view, Object.assign({}, ctx.state || {}, model || {}));
+            ctx.response.body = env.render(views, Object.assign({}, ctx.state || {}, model || {}));
             //设置内容类型
             ctx.response.type = 'text/html';
         };
