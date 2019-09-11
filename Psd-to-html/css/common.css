@@ -1,0 +1,213 @@
+main {
+    width: 1100px;
+    margin: 0 auto;
+}
+
+.menu{
+    height: 194px;
+}
+.menu .menu-tag{
+    position: absolute;
+    left: 50%;
+    margin-left: -100px;
+    width: 200px;
+    height: 96px;
+    background: #f34949;
+}
+
+.menu .menu-tag:after {
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+    border-bottom: 13px solid #fff;
+}
+
+.menu .the-menu{
+    position: relative;
+    font-size: 26px;
+    color: #fff;
+    padding-top: 25px;
+    text-align: center;
+}
+
+.menu-list {
+    position: relative;
+    margin: 0 auto;
+    color: #555;
+    overflow: hidden;
+}
+
+.menu-list ul{
+    width: 1214px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.menu-list .menu-item{
+    float: left;
+    width: 493px;
+    margin-right: 114px;
+}
+
+.menu-list .menu-title{
+    float: left;
+    margin-bottom: 62px;
+}
+
+.menu-list .dish-name{
+    font-size: 16px;
+    margin-top: 0;
+}
+
+.menu-list .material{
+    font-size: 12px;
+    color: #b7b7b7;
+}
+.menu-list .menu-item .line{
+    float: right;
+    margin-top: 10px;
+    margin-right: 40px;
+    width: 192px;
+    border-bottom: 2px solid #ecebeb;
+
+}
+
+.menu-list  .menu-price{
+    float: right;
+    font-size:16px;
+    font-weight: 600;
+}
+
+.menu-list .menu-more{
+    width: 119px;
+    height: 34px;
+    margin: 0 auto;
+    margin-bottom: 0px;
+    padding-left: 14px;
+    border: 1px solid #d7d5d5;
+    line-height: 34px;
+    color: #b7b7b7;
+}
+
+.menu-list .more{
+    font-size: 14px;
+}
+
+.menu-list .vertical{
+    margin: 0 12px;
+}
+
+.menu-list .icon{
+    display: inline-block;
+    width: 11px;
+    height: 7px;
+    background: url('../image/icon.gif');
+}
+
+.dishes{
+    margin-top: 200px;
+}
+
+.dishes h4{
+    float: left;
+    margin-right: 18px;
+    font-size: 20px;    
+    color: #3b3b3b;
+}
+
+.dishes .unselected{
+    float: right;
+    margin-top: 5px;
+    margin-left: 11px;
+    width: 9px;
+    height: 9px;
+    background: #dedede;
+    border-radius: 50%;
+}
+
+.dishes .selected{
+    float: right;
+    margin-top: 5px;
+    margin-left: 11px;
+    width: 9px;
+    height: 9px;
+    background: #9b9b9b;
+    border-radius: 50%;
+}
+
+.dishes .line{
+    float: left;
+    width: 200px;
+    margin-top: 12px;
+    border-top: 1px solid #e5e3e3;
+}
+
+.dishes .featured{
+    float: left;
+    margin-top: 77px;
+    overflow: hidden;
+    width: 1157px;
+    height: 363px;
+}
+
+.dishes .fimg {
+    float: left;
+    margin-right: 57px;
+    width: 232px;
+}
+
+.dishes .dishes-name{
+    font-size: 16px;
+    margin-top: 27px;
+}
+
+.dishes .price{
+    float: right;
+    font-size: 16px;
+}
+
+.dishes .star{
+    display: inline-block;
+    margin-top: 10px;
+    margin-right: 5px;
+    width: 12px;
+    height: 13px;
+    background-image: url('../image/star.png');
+    background-repeat: no-repeat;
+}
+
+.dishes .nostar{
+    background-position: -12px 0;
+}
+
+.dishes .gallery{
+    margin-top: 200px;
+    font-size: 0;
+}
+
+.dishes .gimg{
+    float: left;
+    margin-top: 129px;
+    width: 1100px;
+    height: 383px;
+}
+
+.dishes .gimg-m{
+    float: left;
+    width: 353px;
+}
+
+.dishes .gimg-s{
+    float: left;
+    width: 289px;
+}
+
+.dishes .gimg-l{
+    float: left;
+    width: 458px;
+}

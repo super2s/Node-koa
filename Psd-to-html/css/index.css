@@ -1,0 +1,114 @@
+
+
+.index-header{
+    height: 110px;
+    width: 1100px;
+    margin: 0 auto;
+}
+
+.index-header .index-header-logo{
+    float: left;
+    height: 54px;
+    width: 181px;
+    background-image: url("../image/index-header-logo.png");
+    margin-top: 39px;
+}
+
+.index-header .item{
+    float: right;
+    line-height: 1.8em;
+    margin-top: 48px;
+    margin-left: 48px;
+    font-size: 14px;
+    color: #3b3b3b;
+}
+
+.index-banner{
+    position: relative;
+    background-color: #6e6d6d;
+}
+
+.index-banner-bg {
+    height: 571px;
+    overflow: hidden;
+    border-bottom: 4px solid #f34949;
+}
+
+.index-banner-bg img{
+    margin: 0 auto;
+}
+
+.index-banner .index-banner-text {
+    position: absolute;
+    width: 900px;
+    height: 136px;
+    top: 175px;
+    left: 50%;
+    margin-left: -450px;
+}
+
+.index-banner .text {
+    font-size: 21px;
+    color: #fff;
+    margin-top: 24px;
+    text-align: center;
+}
+
+.index-banner .line {
+    display: inline-block;
+    width: 52px;
+    border-top: 1px solid #fff;
+    vertical-align: middle;
+}
+
+.index-banner .line-l{
+    margin-right: 26px;
+}
+
+.index-banner .line-r{
+    margin-left: 26px;
+}
+
+footer{
+    margin-top: 200px;
+}
+
+.index-footer{
+    height: 217px;
+    padding-top: 100px;
+    background-color: #3b3b3b;
+}
+
+.index-footer .index-footer-container{
+    width: 1100px;
+    margin: 0 auto;
+}
+
+.index-footer .footer-col{
+    float: left;
+    width: 230px;
+    margin-right: 60px;
+    line-height: 30px;
+    color: #fff;
+    font-size: 16px;
+}
+
+.index-footer .footer-row{
+    line-height: 35px;
+}
+
+.index-footer .nomargin{
+    margin-right: 0;
+}
+
+.index-footer .index-footer-logo{
+    float: left;
+    width: 181px;
+    height: 54px;
+    margin-top: -16px;
+    background-image: url("../image/index-footer-logo.png");
+}
+
+.footer-info{
+    margin-top: -4px;
+}
