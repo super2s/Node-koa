@@ -1,0 +1,289 @@
+
+
+
+main{
+    width: 1190px;
+    margin: 0 auto;
+}
+
+main .top-screening .crumb{
+    width: 1190px;
+    height: 46px;
+    border-top: #999 1px solid;
+}
+
+main .top-screening .search{
+    color: #999;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+main .top-screening .search input{
+    border: #999 1px solid;
+    padding-left: 10px;
+}
+
+main .top-screening .search input:focus{outline:none;}
+
+main .top-screening .search .search-icon{
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    margin-top: -20px;
+    margin-left: 210px;
+    background: url('../image/site/search.png');
+    background-repeat: no-repeat;
+    z-index: 2;
+}
+
+main .top-screening .count{
+    float: right;
+    margin-top: -25px;
+    color: #999;
+}
+
+main .top-screening .brand-show{
+    display: block;
+    height: 70px;
+    border: #cdcdcd 2px solid;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+main .top-screening .brand-hide{
+    display: none;
+    height: 186px;
+    outline: #cdcdcd 2px solid;
+    margin-bottom: 20px;
+}
+
+main .top-screening .rect{
+    float: left;
+    height: 186px;
+    width: 120px;
+    padding-left: 15px;
+    padding-top: 10px;
+    margin-right: 20px;
+    background: #ececec;
+}
+
+main .top-screening .text{
+    color: #999;
+}
+
+main .top-screening .content{
+    float: left;
+    width: 900px;
+    height: 70px;
+    padding-top: 10px;
+}
+
+main .top-screening .content-hide{
+    float: left;
+    width: 900px;
+    height: 186px;
+    padding-top: 10px;
+    overflow: auto;
+}
+
+main .top-screening .brand-btn{
+    float: left;
+    width: 105px;
+    height: 26px;
+}
+
+main .top-screening .multiple{
+    float: left;
+    font-size: 14px;
+    line-height: 14px;
+    text-align: center;
+    margin-top: 10px;
+    
+}
+main .top-screening .more{
+    float: left;
+    font-size: 14px;
+    margin-left: 5px;
+    margin-top: 10px;
+}
+
+main .top-screening .item{
+    float: left;
+    margin-right: 30px;
+    margin-bottom: 10px;
+}
+
+main .top-screening .filler{
+    width: 1190px;
+    height: 34px;
+    padding: 5px;
+    background-color: #ececec;
+}
+
+main .top-screening .filler a{
+    text-decoration: none;
+    color: #999;
+}
+
+main .top-screening .filler a:hover{
+    color: #FF0036;
+    background-color: #ececec;
+}
+
+main .top-screening .fSort{
+    float: left;
+    width: 46px;
+    height: 24px;
+    color: #999;
+    margin-right: -1px;
+    text-align: center;
+    background: #fff;
+    border: #999 1px solid;
+}
+
+main .top-screening .fprice{
+    float: left;
+    width: 125px;
+
+    margin-left: 5px;
+}
+
+main .top-screening .checkbox{
+    float: left;
+    width: 235px;
+    height: 24px;
+    border: #999 1px solid;
+    background-color: #fff;
+    margin-left: 5px;
+}
+
+main .top-screening .checkbox .checkbox-hide{
+    position: relative;
+    display: none;
+    width: 235px;
+    margin-left: -1px;
+    border: #999 1px solid;
+    border-top: transparent;
+    background-color: #fff;
+
+}
+
+main .top-screening .checkbox input{
+    height:14px; 
+    vertical-align:middle; 
+    margin-left: 5px;
+}
+
+main .top-screening .checkbox p{
+    float: right;
+    color: #999;
+}
+
+main .top-screening .checkbox p:hover{
+    float: right;
+    color: #FF0036;
+    text-decoration: none;
+    cursor:pointer;
+}
+
+
+main .top-screening .fprice-input{
+    float: left;
+    width: 60px;
+    height: 24px;
+    border: #999 1px solid;
+}
+
+main .top-screening .hor{
+    float: left;
+    width: 5px;
+    height: 24px;
+    vertical-align: middle;
+    background: #F1EDEC;
+    border-top: #999 1px solid;
+    border-bottom: #999 1px solid;
+    color: #CCCCCC;
+}
+
+.product-list{
+    float: left;
+    width: 1212px;
+}
+
+.product-img-lis{
+    float: left;
+    width: 220px;
+    height: 333px;
+    padding: 5px;
+    margin-right: 22px;    
+    margin-top: 22px;
+    border: 1px #f6f5f5 solid;
+}
+
+
+div.product-img-lis:hover{
+    outline: 4px #FF0036 solid;
+}
+
+.product-list .price{
+    height: 30px;
+    font-size: 18px;
+    line-height: 1.8;
+    color: #FF0036;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.product-list .brand{
+    font-size: 14px;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow: clip;
+    margin-bottom: 5px;
+}
+
+.product-list .brand:hover{
+    color: #FF0036;
+    text-decoration: underline;
+}
+
+.product-list .merchant{
+    height: 22px;
+    font-size: 13px;
+    text-decoration: underline;
+    margin-bottom: 5px;
+}
+
+.product-list .merchant a{
+    color: #999;
+}
+
+.product-list .info{
+    height: 33px;
+    font-size: 13px;
+    border-top: 1px #f6f5f5 solid;
+    white-space: nowrap;
+}
+
+.product-list .info span{
+    display: inline-block;
+    width: 87px;
+    border-right: 1px #f6f5f5 solid;
+    margin-right: 5px;
+    padding-top: 3px;
+}
+
+/* .product-list .info .evaluation{
+    display: inline-block;
+    width: 90px;
+    border-right: 1px #f6f5f5 solid;
+    margin-right: 5px;
+} */
+
+.product-list .info strong{
+    color: #df7e00;
+}
+
+.alww{
+
+}

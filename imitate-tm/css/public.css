@@ -1,0 +1,282 @@
+
+body{
+    font-size: 14px;
+    font-family: Arial;
+}
+
+.top{
+    background-color: #f2f2f2;
+    border-bottom:1px solid  #e7e7e7;
+
+}
+
+.red-color{
+    color:#FF0036 !important;
+}
+
+.orange-color{
+    color: #ff4400;
+}
+
+.top .center{
+    width: 1230px;
+    height: 32px;
+    margin: 0 auto;
+    color: #999;
+}
+
+.top .f-l{
+    float: left;
+    padding-top: 5px;
+}
+
+.top a{
+    color: #999;
+
+}
+
+.drop-items{
+    display: none;
+}
+
+.top ul li:hover{ 
+    background-color:#fff;
+}
+
+.top .top-item{
+    float: left;
+    height: 41px;
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.top .mytb-item{
+    position: absolute;
+    display: none;
+    width: 110px;
+    height: 55px;
+    padding-top: 8px;
+    margin-top: 8px;
+    margin-left: -10px;
+    background: #fff;
+    text-align: center;
+    box-shadow: 1px 1px 10px #999;
+}
+
+.top .mycot-item{
+    position: absolute;
+    display: none;
+    width: 90px;
+    height: 55px;
+    padding-top: 8px;
+    margin-top: 8px;
+    margin-left: -10px;
+    background: #fff;
+    text-align: center;
+    box-shadow: 1px 1px 10px #999;
+    z-index: 1;
+    
+}
+
+.top .qrcode{
+    position: absolute;
+    display: none;
+    margin-left: -90px;
+    z-index: 1;
+}
+
+.top .merchant-item{
+    position: absolute;
+    display: none;
+    width: 150px;
+    height: 190px;
+    padding-top: 8px;
+    margin-top: 8px;
+    margin-left: -70px;
+    background: #fff;
+    z-index: 1;
+    box-shadow: 1px 1px 10px #999;
+}
+
+.top .merchant-item-title{
+    width: 150px;
+    padding-left: 10px;
+    font-weight: bold;
+}
+
+.top .merchant-item-text{
+    float: left;
+    padding-left: 10px;
+    width: 75px;
+}
+
+.top a:hover{
+    color: #FF0036;
+    text-decoration: none;
+}
+
+.header{
+    width: 1230px;
+    height: 130px;
+    margin: 0 auto;
+}
+
+.header input:focus{outline:none;}
+
+.header .index-logo{
+    position: absolute;
+    float: left;
+    width: 290px;
+    height: 130px;
+    background: url("../image/TB1ivMPeuL2gK0jSZPhXXahvXXa-290-130.gif");
+    margin-left: -50px;
+}
+
+.header .procduct-page-logo{
+    position: absolute;
+    float: left;
+    width: 191px;
+    height: 30px;
+    background: url("../image/tmlogo.png");
+    background-repeat: no-repeat;
+    margin-top: 30px;
+}
+
+.header .search{
+    margin: 0 auto;
+    width: 625px;
+    height: 106px;
+    padding-top: 30px;
+}
+
+.header .search input{
+    display: inline-block;
+    width: 515px;
+    height: 40px;
+    border: #FF0036 2px solid;
+}
+
+.header .search-btn{
+    display: inline-block;
+    position: absolute;
+    width: 110px;
+    height: 40px;
+    border: 1px solid transparent;
+    background-color: #FF0036;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.header .prompt{
+    margin-left: -10px;
+}
+.header .item{ 
+    float: left;
+    display: block;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-top: 5px;
+    font-size: 12px;
+    text-align: center;
+    color: #999;
+}
+
+.header .interval{
+    float: left;
+    margin-top: 3px;
+    display: block;
+    text-align: center;
+}
+
+.footer{
+    width: 1903px;
+    height: 604px;
+}
+
+.footer .footer-img{
+    width: 1190px;
+    height: 150px;
+    margin: 0 auto;
+    padding: 25px 0;
+    font-size: 0;
+    vertical-align: middle;
+}
+
+.footer .footer-img img{
+    width: 297px;
+    height: 100px;
+}
+
+.footer .footer-desc{
+    width: 1190px;
+    height: 213px;
+    border-top: #e7e7e7 1px solid;
+    margin: 0 auto;
+    padding-top: 25px;
+}
+
+.footer .footer-desc dl{
+    float: left;
+    width: 238px;
+    padding-left: 30px;
+    color: #999;
+}
+
+.footer .footer-desc dt{
+    color: #646464;
+    font-size: 18px;
+    line-height: 1.8em;
+}
+
+.footer .footer-desc a{
+    color: #999;
+    text-decoration: none;
+}
+
+.footer .footer-desc .cat{
+    width: 79px;
+    height: 31px;
+    background: url('../image/site/cateye.png');
+    background-repeat: no-repeat;
+    margin-left: -10px;
+    margin-top: 61px;
+}
+
+.footer .footer-desc .qrcode{
+    width: 105px;
+    height: 105px;
+    background: url('../image/qrCode.jpg');
+}
+
+.footer .copyright{
+    width: 100%;
+    height: 222px;
+    background-color: #000;
+    color: #fff;
+    font-size: 13px;
+    border-top: #FF0036 2px solid;
+}
+
+.footer .footer-info{
+    width: 1190px;
+    margin: 0 auto;
+    padding-top: 5px;
+}
+
+.footer .info{
+    line-height: 1.8em;
+    margin-top: 3px;
+    margin-bottom: 5px;
+}
+.footer .footer-copyright{
+    color: #A4A4A4;
+}
+
+.footer .footer-copyright span{
+    line-height: 1.8em;
+    padding-right: 45px;
+}
+
+

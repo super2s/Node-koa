@@ -1,0 +1,1126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/index-product.css">
+    <link rel="stylesheet" href="css/public.css">
+    <script src="js/function.js"></script>
+    <script src="js/event.js"></script>
+    <title>模仿天猫官网</title>
+</head>
+<body>    
+    <div class="side-nav">
+        <div class="side-nav-flexbox">
+            <ul>
+                <li class="nav-content"><img src="image/catear.png" width="20px;"></li>
+                <li class="nav-content cart"><br>购<br>物<br>车</li>
+                <li class="nav-content"><img src="image/钱.png" width="25px"></li>
+                <li class="nav-content"><img src="image/星星.png " width="25px"></li>
+                <li class="nav-content"><img src="image/历史记录.png" width="25px"></li>
+                <li class="nav-content"><img src="image/充值.png" width="25px"></li>
+            </ul>
+        </div>
+    </div>
+    <nav class="top">
+        <div class="center">
+            <p class="f-l"><em>喵，欢迎来天猫</em>
+                <a href="#">请登录</a>
+                <a href="#">免费注册</a>
+            </p>
+            <ul class="float-right">
+                <li id="mytb" class="top-item">
+                    <a  href="#">我的淘宝</a>
+                    <ul data-id="mytb" class="mytb-item">
+                        <li><a href="#">已买到的宝贝</a></li>
+                        <li><a href="#">已卖出的宝贝</a></li>
+                    </ul>
+                </li>
+                <li class="top-item"><a href="shopping-cart.html">购物车<strong>0</strong>件</a></li>
+                <li id="mycot" class="top-item">
+                    <a href="#">收藏夹</a>
+                    <ul data-id="mycot" class="mycot-item">
+                        <li><a href="#">收藏的宝贝</a></li>
+                        <li><a href="#">收藏的店铺</a></li>
+                    </ul>
+                </li>
+                <li class="top-item">|</li> 
+                <li id="qrcode" class="top-item">
+                    <a href="#">手机版</a>
+                    <div data-id="qrcode" class="qrcode"><img src="image/qrCode.jpg" width="205px"></div>
+                </li>
+                <li class="top-item"><a href="#">淘宝网</a></li>
+                <li id="merchant" class="top-item">
+                    <a href="#">商家支持</a>
+                    <ul data-id="merchant" class="merchant-item">
+                        <li class="merchant-item-title">商家:</li>
+                        <li class="merchant-item-text">商家中心</li>
+                        <li class="merchant-item-text">天猫规则</li>
+                        <li class="merchant-item-text">商品入驻</li>
+                        <li class="merchant-item-text">运营服务</li>
+                        <li class="merchant-item-text">商家品控</li>
+                        <li class="merchant-item-text">商家工具</li>
+                        <li class="merchant-item-text">天猫智库</li>
+                        <li class="merchant-item-text">喵言喵语</li>
+                        <li>----------------------------</li>
+                        <li class="merchant-item-title">帮助：</li>
+                        <li class="merchant-item-text">帮助中心</li>
+                        <li class="merchant-item-text">问商友</li>
+                    </ul>
+                </li>
+                <li class="top-item"><a href="#">网站导航</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="header">
+        <div class="index-logo"></div>
+        <div class="search">
+            <input type="search" placeholder=" 搜索 天猫 商品/品牌/店铺">
+            <button class="search-btn" type="submit">搜索</button>
+            <div class="prompt">
+                <ul class="float-left clearfloat">
+                    <li class="item">针织衫</li>
+                    <li class="interval">|</li>
+                    <li class="item red-color">连衣裙</li>
+                    <li class="interval">|</li>
+                    <li class="item">四件套</li>
+                    <li class="interval">|</li>
+                    <li class="item red-color">摄像头</li>
+                    <li class="interval">|</li>
+                    <li class="item">客厅灯</li>
+                    <li class="interval">|</li>
+                    <li class="item red-color">口红</li>
+                    <li class="interval">|</li>
+                    <li class="item red-color">手机</li>
+                    <li class="interval">|</li>
+                    <li class="item">运动鞋</li>
+                    <li class="interval">|</li>
+                    <li class="item red-color">牛奶</li>
+                </ul>
+            </div>
+        </div>
+    
+    </div>
+    <main>
+        
+        <div class="content">
+            <div class="main-nav clearfloat">
+                <div class="categories clearfloat">
+                    <ul class="categories-items">
+                            <li class="sort clearfloat">&nbsp;&nbsp;<img src="image/sort.png">&nbsp;&nbsp;商品分类</li>
+                        <ul class="inline">
+                            <li class="inline-item" id="women">&nbsp;&nbsp;<img src="image/女装内衣.png" width="20px" height="20px">&nbsp;&nbsp;<a href="#">女装/内衣</a></li>
+                            <div class="throw" data-id="women">
+                            <ul>
+                                <ul class="thorw-item clearfloat">
+                                    <li class="thorw-title">当季流行&gt;</li>
+                                    <ul class="thorw-context">
+                                        <li class="thorw-context-item red-color">女装新品</li>
+                                        <li class="thorw-context-item">商场同款</li>
+                                        <li class="thorw-context-item red-color">仙女连衣裙</li>
+                                        <li class="thorw-context-item">T恤衬衫</li>
+                                        <li class="thorw-context-item">时髦外套</li>
+                                        <li class="thorw-context-item">休闲裤</li>
+                                        <li class="thorw-context-item">牛仔裤</li>
+                                        <li class="thorw-context-item red-color">无痕文胸</li>
+                                        <li class="thorw-context-item">运动文胸</li>
+                                        <li class="thorw-context-item red-color">潮流家居服</li>
+                                        <li class="thorw-context-item">百搭船袜</li>
+                                    </ul>
+                                    <li class="thorw-title">精选上装&gt;</li>
+                                    <ul class="thorw-context">
+                                        <li class="thorw-context-item">女装新品</li>
+                                        <li class="thorw-context-item">商场同款</li>
+                                        <li class="thorw-context-item">仙女连衣裙</li>
+                                        <li class="thorw-context-item">T恤衬衫</li>
+                                        <li class="thorw-context-item">时髦外套</li>
+                                        <li class="thorw-context-item">休闲裤</li>
+                                        <li class="thorw-context-item">牛仔裤</li>
+                                        <li class="thorw-context-item">无痕文胸</li>
+                                        <li class="thorw-context-item">运动文胸</li>
+                                        <li class="thorw-context-item">潮流家居服</li>
+                                        <li class="thorw-context-item">百搭船袜</li>
+                                    </ul>
+                                    <li class="thorw-title">浪漫裙装&gt;</li>
+                                    <ul class="thorw-context">
+                                        <li class="thorw-context-item">女装新品</li>
+                                        <li class="thorw-context-item">商场同款</li>
+                                        <li class="thorw-context-item">仙女连衣裙</li>
+                                        <li class="thorw-context-item">T恤衬衫</li>
+                                        <li class="thorw-context-item">时髦外套</li>
+                                        <li class="thorw-context-item">休闲裤</li>
+                                        <li class="thorw-context-item">牛仔裤</li>
+                                        <li class="thorw-context-item">无痕文胸</li>
+                                        <li class="thorw-context-item">运动文胸</li>
+                                        <li class="thorw-context-item">潮流家居服</li>
+                                        <li class="thorw-context-item">百搭船袜</li>
+                                    </ul>
+                                </ul>
+                            </ul>
+                            </div>
+                            <li class="inline-item" id="mens">&nbsp;&nbsp;<img src="image/男装.png" width="20px" height="20px">&nbsp;&nbsp;<a href="#">男装/运动户外</a></li>
+                            <div class="throw" data-id="mens">
+                                    <ul>
+                                            <ul class="thorw-item clearfloat">
+                                                <li class="thorw-title">当季流行&gt;</li>
+                                                <ul class="thorw-context">
+                                                    <li class="thorw-context-item red-color">女装新品</li>
+                                                    <li class="thorw-context-item">商场同款</li>
+                                                    <li class="thorw-context-item red-color">仙女连衣裙</li>
+                                                    <li class="thorw-context-item">T恤衬衫</li>
+                                                    <li class="thorw-context-item">时髦外套</li>
+                                                    <li class="thorw-context-item">休闲裤</li>
+                                                    <li class="thorw-context-item">牛仔裤</li>
+                                                    <li class="thorw-context-item red-color">无痕文胸</li>
+                                                    <li class="thorw-context-item">运动文胸</li>
+                                                    <li class="thorw-context-item red-color">潮流家居服</li>
+                                                    <li class="thorw-context-item">百搭船袜</li>
+                                                </ul>
+                                                <li class="thorw-title">精选上装&gt;</li>
+                                                <ul class="thorw-context">
+                                                    <li class="thorw-context-item">女装新品</li>
+                                                    <li class="thorw-context-item">商场同款</li>
+                                                    <li class="thorw-context-item">仙女连衣裙</li>
+                                                    <li class="thorw-context-item">T恤衬衫</li>
+                                                    <li class="thorw-context-item">时髦外套</li>
+                                                    <li class="thorw-context-item">休闲裤</li>
+                                                    <li class="thorw-context-item">牛仔裤</li>
+                                                    <li class="thorw-context-item">无痕文胸</li>
+                                                    <li class="thorw-context-item">运动文胸</li>
+                                                    <li class="thorw-context-item">潮流家居服</li>
+                                                    <li class="thorw-context-item">百搭船袜</li>
+                                                </ul>
+                                                <li class="thorw-title">浪漫裙装&gt;</li>
+                                                <ul class="thorw-context">
+                                                    <li class="thorw-context-item">女装新品</li>
+                                                    <li class="thorw-context-item">商场同款</li>
+                                                    <li class="thorw-context-item">仙女连衣裙</li>
+                                                    <li class="thorw-context-item">T恤衬衫</li>
+                                                    <li class="thorw-context-item">时髦外套</li>
+                                                    <li class="thorw-context-item">休闲裤</li>
+                                                    <li class="thorw-context-item">牛仔裤</li>
+                                                    <li class="thorw-context-item">无痕文胸</li>
+                                                    <li class="thorw-context-item">运动文胸</li>
+                                                    <li class="thorw-context-item">潮流家居服</li>
+                                                    <li class="thorw-context-item">百搭船袜</li>
+                                                </ul>
+                                            </ul>
+                                        </ul>
+                            </div>
+                            <li class="inline-item" id="wshoes">&nbsp;&nbsp;<img src="image/女鞋.png" width="20px" height="20px">&nbsp;&nbsp;<a href="#">女鞋/男鞋/箱包</a></li>
+                            <div class="throw" data-id="wshoes">
+                                    <ul>
+                                            <ul class="thorw-item clearfloat">
+                                                <li class="thorw-title">当季流行&gt;</li>
+                                                <ul class="thorw-context">
+                                                    <li class="thorw-context-item red-color">女装新品</li>
+                                                    <li class="thorw-context-item">商场同款</li>
+                                                    <li class="thorw-context-item red-color">仙女连衣裙</li>
+                                                    <li class="thorw-context-item">T恤衬衫</li>
+                                                    <li class="thorw-context-item">时髦外套</li>
+                                                    <li class="thorw-context-item">休闲裤</li>
+                                                    <li class="thorw-context-item">牛仔裤</li>
+                                                    <li class="thorw-context-item red-color">无痕文胸</li>
+                                                    <li class="thorw-context-item">运动文胸</li>
+                                                    <li class="thorw-context-item red-color">潮流家居服</li>
+                                                    <li class="thorw-context-item">百搭船袜</li>
+                                                </ul>
+                                                <li class="thorw-title">精选上装&gt;</li>
+                                                <ul class="thorw-context">
+                                                    <li class="thorw-context-item">女装新品</li>
+                                                    <li class="thorw-context-item">商场同款</li>
+                                                    <li class="thorw-context-item">仙女连衣裙</li>
+                                                    <li class="thorw-context-item">T恤衬衫</li>
+                                                    <li class="thorw-context-item">时髦外套</li>
+                                                    <li class="thorw-context-item">休闲裤</li>
+                                                    <li class="thorw-context-item">牛仔裤</li>
+                                                    <li class="thorw-context-item">无痕文胸</li>
+                                                    <li class="thorw-context-item">运动文胸</li>
+                                                    <li class="thorw-context-item">潮流家居服</li>
+                                                    <li class="thorw-context-item">百搭船袜</li>
+                                                </ul>
+                                                <li class="thorw-title">浪漫裙装&gt;</li>
+                                                <ul class="thorw-context">
+                                                    <li class="thorw-context-item">女装新品</li>
+                                                    <li class="thorw-context-item">商场同款</li>
+                                                    <li class="thorw-context-item">仙女连衣裙</li>
+                                                    <li class="thorw-context-item">T恤衬衫</li>
+                                                    <li class="thorw-context-item">时髦外套</li>
+                                                    <li class="thorw-context-item">休闲裤</li>
+                                                    <li class="thorw-context-item">牛仔裤</li>
+                                                    <li class="thorw-context-item">无痕文胸</li>
+                                                    <li class="thorw-context-item">运动文胸</li>
+                                                    <li class="thorw-context-item">潮流家居服</li>
+                                                    <li class="thorw-context-item">百搭船袜</li>
+                                                </ul>
+                                            </ul>
+                                        </ul>
+                            </div>
+                            <li class="inline-item" id="makeups">&nbsp;&nbsp;<img src="image/美妆.png" width="20px" height="20px">&nbsp;&nbsp;<a href="#">美妆/个人护理</a></li>
+                            <div class="throw" data-id="makeups">                            
+                                <ul>
+                                    <ul class="thorw-item clearfloat">
+                                        <li class="thorw-title">当季流行&gt;</li>
+                                        <ul class="thorw-context">
+                                            <li class="thorw-context-item red-color">女装新品</li>
+                                            <li class="thorw-context-item">商场同款</li>
+                                            <li class="thorw-context-item red-color">仙女连衣裙</li>
+                                            <li class="thorw-context-item">T恤衬衫</li>
+                                            <li class="thorw-context-item">时髦外套</li>
+                                            <li class="thorw-context-item">休闲裤</li>
+                                            <li class="thorw-context-item">牛仔裤</li>
+                                            <li class="thorw-context-item red-color">无痕文胸</li>
+                                            <li class="thorw-context-item">运动文胸</li>
+                                            <li class="thorw-context-item red-color">潮流家居服</li>
+                                            <li class="thorw-context-item">百搭船袜</li>
+                                        </ul>
+                                        <li class="thorw-title">精选上装&gt;</li>
+                                        <ul class="thorw-context">
+                                            <li class="thorw-context-item">女装新品</li>
+                                            <li class="thorw-context-item">商场同款</li>
+                                            <li class="thorw-context-item">仙女连衣裙</li>
+                                            <li class="thorw-context-item">T恤衬衫</li>
+                                            <li class="thorw-context-item">时髦外套</li>
+                                            <li class="thorw-context-item">休闲裤</li>
+                                            <li class="thorw-context-item">牛仔裤</li>
+                                            <li class="thorw-context-item">无痕文胸</li>
+                                            <li class="thorw-context-item">运动文胸</li>
+                                            <li class="thorw-context-item">潮流家居服</li>
+                                            <li class="thorw-context-item">百搭船袜</li>
+                                        </ul>
+                                        <li class="thorw-title">浪漫裙装&gt;</li>
+                                        <ul class="thorw-context">
+                                            <li class="thorw-context-item">女装新品</li>
+                                            <li class="thorw-context-item">商场同款</li>
+                                            <li class="thorw-context-item">仙女连衣裙</li>
+                                            <li class="thorw-context-item">T恤衬衫</li>
+                                            <li class="thorw-context-item">时髦外套</li>
+                                            <li class="thorw-context-item">休闲裤</li>
+                                            <li class="thorw-context-item">牛仔裤</li>
+                                            <li class="thorw-context-item">无痕文胸</li>
+                                            <li class="thorw-context-item">运动文胸</li>
+                                            <li class="thorw-context-item">潮流家居服</li>
+                                            <li class="thorw-context-item">百搭船袜</li>
+                                        </ul>
+                                    </ul>
+                                </ul></div>
+                            <li class="inline-item" id="diamond">&nbsp;&nbsp;<img src="image/钻石.png" width="20px" height="20px">&nbsp;&nbsp;<a href="#">腕表/眼镜/珠宝饰品</a></li>
+                            <div class="throw" data-id="diamond">
+                                    <ul>
+                                            <ul class="thorw-item clearfloat">
+                                                <li class="thorw-title">当季流行&gt;</li>
+                                                <ul class="thorw-context">
+                                                    <li class="thorw-context-item red-color">女装新品</li>
+                                                    <li class="thorw-context-item">商场同款</li>
+                                                    <li class="thorw-context-item red-color">仙女连衣裙</li>
+                                                    <li class="thorw-context-item">T恤衬衫</li>
+                                                    <li class="thorw-context-item">时髦外套</li>
+                                                    <li class="thorw-context-item">休闲裤</li>
+                                                    <li class="thorw-context-item">牛仔裤</li>
+                                                    <li class="thorw-context-item red-color">无痕文胸</li>
+                                                    <li class="thorw-context-item">运动文胸</li>
+                                                    <li class="thorw-context-item red-color">潮流家居服</li>
+                                                    <li class="thorw-context-item">百搭船袜</li>
+                                                </ul>
+                                                <li class="thorw-title">精选上装&gt;</li>
+                                                <ul class="thorw-context">
+                                                    <li class="thorw-context-item">女装新品</li>
+                                                    <li class="thorw-context-item">商场同款</li>
+                                                    <li class="thorw-context-item">仙女连衣裙</li>
+                                                    <li class="thorw-context-item">T恤衬衫</li>
+                                                    <li class="thorw-context-item">时髦外套</li>
+                                                    <li class="thorw-context-item">休闲裤</li>
+                                                    <li class="thorw-context-item">牛仔裤</li>
+                                                    <li class="thorw-context-item">无痕文胸</li>
+                                                    <li class="thorw-context-item">运动文胸</li>
+                                                    <li class="thorw-context-item">潮流家居服</li>
+                                                    <li class="thorw-context-item">百搭船袜</li>
+                                                </ul>
+                                                <li class="thorw-title">浪漫裙装&gt;</li>
+                                                <ul class="thorw-context">
+                                                    <li class="thorw-context-item">女装新品</li>
+                                                    <li class="thorw-context-item">商场同款</li>
+                                                    <li class="thorw-context-item">仙女连衣裙</li>
+                                                    <li class="thorw-context-item">T恤衬衫</li>
+                                                    <li class="thorw-context-item">时髦外套</li>
+                                                    <li class="thorw-context-item">休闲裤</li>
+                                                    <li class="thorw-context-item">牛仔裤</li>
+                                                    <li class="thorw-context-item">无痕文胸</li>
+                                                    <li class="thorw-context-item">运动文胸</li>
+                                                    <li class="thorw-context-item">潮流家居服</li>
+                                                    <li class="thorw-context-item">百搭船袜</li>
+                                                </ul>
+                                            </ul>
+                                        </ul>
+                            </div>
+                            <li class="inline-item" id="phone">&nbsp;&nbsp;<img src="image/手机.png" width="20px" height="20px">&nbsp;&nbsp;<a href="#">手机/数码/电脑办公</a></li>
+                            <div class="throw" data-id="phone">
+                                    <ul>
+                                            <ul class="thorw-item clearfloat">
+                                                <li class="thorw-title">当季流行&gt;</li>
+                                                <ul class="thorw-context">
+                                                    <li class="thorw-context-item red-color">女装新品</li>
+                                                    <li class="thorw-context-item">商场同款</li>
+                                                    <li class="thorw-context-item red-color">仙女连衣裙</li>
+                                                    <li class="thorw-context-item">T恤衬衫</li>
+                                                    <li class="thorw-context-item">时髦外套</li>
+                                                    <li class="thorw-context-item">休闲裤</li>
+                                                    <li class="thorw-context-item">牛仔裤</li>
+                                                    <li class="thorw-context-item red-color">无痕文胸</li>
+                                                    <li class="thorw-context-item">运动文胸</li>
+                                                    <li class="thorw-context-item red-color">潮流家居服</li>
+                                                    <li class="thorw-context-item">百搭船袜</li>
+                                                </ul>
+                                                <li class="thorw-title">精选上装&gt;</li>
+                                                <ul class="thorw-context">
+                                                    <li class="thorw-context-item">女装新品</li>
+                                                    <li class="thorw-context-item">商场同款</li>
+                                                    <li class="thorw-context-item">仙女连衣裙</li>
+                                                    <li class="thorw-context-item">T恤衬衫</li>
+                                                    <li class="thorw-context-item">时髦外套</li>
+                                                    <li class="thorw-context-item">休闲裤</li>
+                                                    <li class="thorw-context-item">牛仔裤</li>
+                                                    <li class="thorw-context-item">无痕文胸</li>
+                                                    <li class="thorw-context-item">运动文胸</li>
+                                                    <li class="thorw-context-item">潮流家居服</li>
+                                                    <li class="thorw-context-item">百搭船袜</li>
+                                                </ul>
+                                                <li class="thorw-title">浪漫裙装&gt;</li>
+                                                <ul class="thorw-context">
+                                                    <li class="thorw-context-item">女装新品</li>
+                                                    <li class="thorw-context-item">商场同款</li>
+                                                    <li class="thorw-context-item">仙女连衣裙</li>
+                                                    <li class="thorw-context-item">T恤衬衫</li>
+                                                    <li class="thorw-context-item">时髦外套</li>
+                                                    <li class="thorw-context-item">休闲裤</li>
+                                                    <li class="thorw-context-item">牛仔裤</li>
+                                                    <li class="thorw-context-item">无痕文胸</li>
+                                                    <li class="thorw-context-item">运动文胸</li>
+                                                    <li class="thorw-context-item">潮流家居服</li>
+                                                    <li class="thorw-context-item">百搭船袜</li>
+                                                </ul>
+                                            </ul>
+                                        </ul>
+                            </div>
+                            <li class="inline-item" id="toy">&nbsp;&nbsp;<img src="image/母婴玩具.png" width="20px" height="20px">&nbsp;&nbsp;<a href="#">母婴玩具</a></li>
+                            <div class="throw" data-id="toy">
+                                    <ul>
+                                            <ul class="thorw-item clearfloat">
+                                                <li class="thorw-title">当季流行&gt;</li>
+                                                <ul class="thorw-context">
+                                                    <li class="thorw-context-item red-color">女装新品</li>
+                                                    <li class="thorw-context-item">商场同款</li>
+                                                    <li class="thorw-context-item red-color">仙女连衣裙</li>
+                                                    <li class="thorw-context-item">T恤衬衫</li>
+                                                    <li class="thorw-context-item">时髦外套</li>
+                                                    <li class="thorw-context-item">休闲裤</li>
+                                                    <li class="thorw-context-item">牛仔裤</li>
+                                                    <li class="thorw-context-item red-color">无痕文胸</li>
+                                                    <li class="thorw-context-item">运动文胸</li>
+                                                    <li class="thorw-context-item red-color">潮流家居服</li>
+                                                    <li class="thorw-context-item">百搭船袜</li>
+                                                </ul>
+                                                <li class="thorw-title">精选上装&gt;</li>
+                                                <ul class="thorw-context">
+                                                    <li class="thorw-context-item">女装新品</li>
+                                                    <li class="thorw-context-item">商场同款</li>
+                                                    <li class="thorw-context-item">仙女连衣裙</li>
+                                                    <li class="thorw-context-item">T恤衬衫</li>
+                                                    <li class="thorw-context-item">时髦外套</li>
+                                                    <li class="thorw-context-item">休闲裤</li>
+                                                    <li class="thorw-context-item">牛仔裤</li>
+                                                    <li class="thorw-context-item">无痕文胸</li>
+                                                    <li class="thorw-context-item">运动文胸</li>
+                                                    <li class="thorw-context-item">潮流家居服</li>
+                                                    <li class="thorw-context-item">百搭船袜</li>
+                                                </ul>
+                                                <li class="thorw-title">浪漫裙装&gt;</li>
+                                                <ul class="thorw-context">
+                                                    <li class="thorw-context-item">女装新品</li>
+                                                    <li class="thorw-context-item">商场同款</li>
+                                                    <li class="thorw-context-item">仙女连衣裙</li>
+                                                    <li class="thorw-context-item">T恤衬衫</li>
+                                                    <li class="thorw-context-item">时髦外套</li>
+                                                    <li class="thorw-context-item">休闲裤</li>
+                                                    <li class="thorw-context-item">牛仔裤</li>
+                                                    <li class="thorw-context-item">无痕文胸</li>
+                                                    <li class="thorw-context-item">运动文胸</li>
+                                                    <li class="thorw-context-item">潮流家居服</li>
+                                                    <li class="thorw-context-item">百搭船袜</li>
+                                                </ul>
+                                            </ul>
+                                        </ul>
+                            </div>
+                            <li class="inline-item" id="snack">&nbsp;&nbsp;<img src="image/零食(1).png" width="20px" height="20px">&nbsp;&nbsp;<a href="#">零食/茶酒/进口食品</a></li>
+                            <div class="throw" data-id="snack">
+                                    <ul>
+                                            <ul class="thorw-item clearfloat">
+                                                <li class="thorw-title">当季流行&gt;</li>
+                                                <ul class="thorw-context">
+                                                    <li class="thorw-context-item red-color">女装新品</li>
+                                                    <li class="thorw-context-item">商场同款</li>
+                                                    <li class="thorw-context-item red-color">仙女连衣裙</li>
+                                                    <li class="thorw-context-item">T恤衬衫</li>
+                                                    <li class="thorw-context-item">时髦外套</li>
+                                                    <li class="thorw-context-item">休闲裤</li>
+                                                    <li class="thorw-context-item">牛仔裤</li>
+                                                    <li class="thorw-context-item red-color">无痕文胸</li>
+                                                    <li class="thorw-context-item">运动文胸</li>
+                                                    <li class="thorw-context-item red-color">潮流家居服</li>
+                                                    <li class="thorw-context-item">百搭船袜</li>
+                                                </ul>
+                                                <li class="thorw-title">精选上装&gt;</li>
+                                                <ul class="thorw-context">
+                                                    <li class="thorw-context-item">女装新品</li>
+                                                    <li class="thorw-context-item">商场同款</li>
+                                                    <li class="thorw-context-item">仙女连衣裙</li>
+                                                    <li class="thorw-context-item">T恤衬衫</li>
+                                                    <li class="thorw-context-item">时髦外套</li>
+                                                    <li class="thorw-context-item">休闲裤</li>
+                                                    <li class="thorw-context-item">牛仔裤</li>
+                                                    <li class="thorw-context-item">无痕文胸</li>
+                                                    <li class="thorw-context-item">运动文胸</li>
+                                                    <li class="thorw-context-item">潮流家居服</li>
+                                                    <li class="thorw-context-item">百搭船袜</li>
+                                                </ul>
+                                                <li class="thorw-title">浪漫裙装&gt;</li>
+                                                <ul class="thorw-context">
+                                                    <li class="thorw-context-item">女装新品</li>
+                                                    <li class="thorw-context-item">商场同款</li>
+                                                    <li class="thorw-context-item">仙女连衣裙</li>
+                                                    <li class="thorw-context-item">T恤衬衫</li>
+                                                    <li class="thorw-context-item">时髦外套</li>
+                                                    <li class="thorw-context-item">休闲裤</li>
+                                                    <li class="thorw-context-item">牛仔裤</li>
+                                                    <li class="thorw-context-item">无痕文胸</li>
+                                                    <li class="thorw-context-item">运动文胸</li>
+                                                    <li class="thorw-context-item">潮流家居服</li>
+                                                    <li class="thorw-context-item">百搭船袜</li>
+                                                </ul>
+                                            </ul>
+                                        </ul>
+                            </div>
+                            <li class="inline-item" id="fruit">&nbsp;&nbsp;<img src="image/水果.png" width="20px" height="20px">&nbsp;&nbsp;<a href="#">生鲜水果</a></li>
+                            <div class="throw" data-id="fruit">
+                                    <ul>
+                                            <ul class="thorw-item clearfloat">
+                                                <li class="thorw-title">当季流行&gt;</li>
+                                                <ul class="thorw-context">
+                                                    <li class="thorw-context-item red-color">女装新品</li>
+                                                    <li class="thorw-context-item">商场同款</li>
+                                                    <li class="thorw-context-item red-color">仙女连衣裙</li>
+                                                    <li class="thorw-context-item">T恤衬衫</li>
+                                                    <li class="thorw-context-item">时髦外套</li>
+                                                    <li class="thorw-context-item">休闲裤</li>
+                                                    <li class="thorw-context-item">牛仔裤</li>
+                                                    <li class="thorw-context-item red-color">无痕文胸</li>
+                                                    <li class="thorw-context-item">运动文胸</li>
+                                                    <li class="thorw-context-item red-color">潮流家居服</li>
+                                                    <li class="thorw-context-item">百搭船袜</li>
+                                                </ul>
+                                                <li class="thorw-title">精选上装&gt;</li>
+                                                <ul class="thorw-context">
+                                                    <li class="thorw-context-item">女装新品</li>
+                                                    <li class="thorw-context-item">商场同款</li>
+                                                    <li class="thorw-context-item">仙女连衣裙</li>
+                                                    <li class="thorw-context-item">T恤衬衫</li>
+                                                    <li class="thorw-context-item">时髦外套</li>
+                                                    <li class="thorw-context-item">休闲裤</li>
+                                                    <li class="thorw-context-item">牛仔裤</li>
+                                                    <li class="thorw-context-item">无痕文胸</li>
+                                                    <li class="thorw-context-item">运动文胸</li>
+                                                    <li class="thorw-context-item">潮流家居服</li>
+                                                    <li class="thorw-context-item">百搭船袜</li>
+                                                </ul>
+                                                <li class="thorw-title">浪漫裙装&gt;</li>
+                                                <ul class="thorw-context">
+                                                    <li class="thorw-context-item">女装新品</li>
+                                                    <li class="thorw-context-item">商场同款</li>
+                                                    <li class="thorw-context-item">仙女连衣裙</li>
+                                                    <li class="thorw-context-item">T恤衬衫</li>
+                                                    <li class="thorw-context-item">时髦外套</li>
+                                                    <li class="thorw-context-item">休闲裤</li>
+                                                    <li class="thorw-context-item">牛仔裤</li>
+                                                    <li class="thorw-context-item">无痕文胸</li>
+                                                    <li class="thorw-context-item">运动文胸</li>
+                                                    <li class="thorw-context-item">潮流家居服</li>
+                                                    <li class="thorw-context-item">百搭船袜</li>
+                                                </ul>
+                                            </ul>
+                                        </ul>
+                            </div>
+                            <li class="inline-item" id="appliance">&nbsp;&nbsp;<img src="image/大家电.png" width="20px" height="20px">&nbsp;&nbsp;<a href="#">大家电/生活电器</a></li>
+                            <div class="throw" data-id="appliance">
+                                    <ul>
+                                            <ul class="thorw-item clearfloat">
+                                                <li class="thorw-title">当季流行&gt;</li>
+                                                <ul class="thorw-context">
+                                                    <li class="thorw-context-item red-color">女装新品</li>
+                                                    <li class="thorw-context-item">商场同款</li>
+                                                    <li class="thorw-context-item red-color">仙女连衣裙</li>
+                                                    <li class="thorw-context-item">T恤衬衫</li>
+                                                    <li class="thorw-context-item">时髦外套</li>
+                                                    <li class="thorw-context-item">休闲裤</li>
+                                                    <li class="thorw-context-item">牛仔裤</li>
+                                                    <li class="thorw-context-item red-color">无痕文胸</li>
+                                                    <li class="thorw-context-item">运动文胸</li>
+                                                    <li class="thorw-context-item red-color">潮流家居服</li>
+                                                    <li class="thorw-context-item">百搭船袜</li>
+                                                </ul>
+                                                <li class="thorw-title">精选上装&gt;</li>
+                                                <ul class="thorw-context">
+                                                    <li class="thorw-context-item">女装新品</li>
+                                                    <li class="thorw-context-item">商场同款</li>
+                                                    <li class="thorw-context-item">仙女连衣裙</li>
+                                                    <li class="thorw-context-item">T恤衬衫</li>
+                                                    <li class="thorw-context-item">时髦外套</li>
+                                                    <li class="thorw-context-item">休闲裤</li>
+                                                    <li class="thorw-context-item">牛仔裤</li>
+                                                    <li class="thorw-context-item">无痕文胸</li>
+                                                    <li class="thorw-context-item">运动文胸</li>
+                                                    <li class="thorw-context-item">潮流家居服</li>
+                                                    <li class="thorw-context-item">百搭船袜</li>
+                                                </ul>
+                                                <li class="thorw-title">浪漫裙装&gt;</li>
+                                                <ul class="thorw-context">
+                                                    <li class="thorw-context-item">女装新品</li>
+                                                    <li class="thorw-context-item">商场同款</li>
+                                                    <li class="thorw-context-item">仙女连衣裙</li>
+                                                    <li class="thorw-context-item">T恤衬衫</li>
+                                                    <li class="thorw-context-item">时髦外套</li>
+                                                    <li class="thorw-context-item">休闲裤</li>
+                                                    <li class="thorw-context-item">牛仔裤</li>
+                                                    <li class="thorw-context-item">无痕文胸</li>
+                                                    <li class="thorw-context-item">运动文胸</li>
+                                                    <li class="thorw-context-item">潮流家居服</li>
+                                                    <li class="thorw-context-item">百搭船袜</li>
+                                                </ul>
+                                            </ul>
+                                        </ul>
+                            </div>
+                            <li class="inline-item" id="furniture">&nbsp;&nbsp;<img src="image/家具-11.png" width="20px" height="20px">&nbsp;&nbsp;<a href="#">家具建材</a></li>
+                            <div class="throw" data-id="furniture">
+
+                                    <ul>
+                                            <ul class="thorw-item clearfloat">
+                                                <li class="thorw-title">当季流行&gt;</li>
+                                                <ul class="thorw-context">
+                                                    <li class="thorw-context-item red-color">女装新品</li>
+                                                    <li class="thorw-context-item">商场同款</li>
+                                                    <li class="thorw-context-item red-color">仙女连衣裙</li>
+                                                    <li class="thorw-context-item">T恤衬衫</li>
+                                                    <li class="thorw-context-item">时髦外套</li>
+                                                    <li class="thorw-context-item">休闲裤</li>
+                                                    <li class="thorw-context-item">牛仔裤</li>
+                                                    <li class="thorw-context-item red-color">无痕文胸</li>
+                                                    <li class="thorw-context-item">运动文胸</li>
+                                                    <li class="thorw-context-item red-color">潮流家居服</li>
+                                                    <li class="thorw-context-item">百搭船袜</li>
+                                                </ul>
+                                                <li class="thorw-title">精选上装&gt;</li>
+                                                <ul class="thorw-context">
+                                                    <li class="thorw-context-item">女装新品</li>
+                                                    <li class="thorw-context-item">商场同款</li>
+                                                    <li class="thorw-context-item">仙女连衣裙</li>
+                                                    <li class="thorw-context-item">T恤衬衫</li>
+                                                    <li class="thorw-context-item">时髦外套</li>
+                                                    <li class="thorw-context-item">休闲裤</li>
+                                                    <li class="thorw-context-item">牛仔裤</li>
+                                                    <li class="thorw-context-item">无痕文胸</li>
+                                                    <li class="thorw-context-item">运动文胸</li>
+                                                    <li class="thorw-context-item">潮流家居服</li>
+                                                    <li class="thorw-context-item">百搭船袜</li>
+                                                </ul>
+                                                <li class="thorw-title">浪漫裙装&gt;</li>
+                                                <ul class="thorw-context">
+                                                    <li class="thorw-context-item">女装新品</li>
+                                                    <li class="thorw-context-item">商场同款</li>
+                                                    <li class="thorw-context-item">仙女连衣裙</li>
+                                                    <li class="thorw-context-item">T恤衬衫</li>
+                                                    <li class="thorw-context-item">时髦外套</li>
+                                                    <li class="thorw-context-item">休闲裤</li>
+                                                    <li class="thorw-context-item">牛仔裤</li>
+                                                    <li class="thorw-context-item">无痕文胸</li>
+                                                    <li class="thorw-context-item">运动文胸</li>
+                                                    <li class="thorw-context-item">潮流家居服</li>
+                                                    <li class="thorw-context-item">百搭船袜</li>
+                                                </ul>
+                                            </ul>
+                                        </ul>
+                            </div>
+                            <li class="inline-item" id="car">&nbsp;&nbsp;<img src="image/汽车.png" width="20px" height="20px">&nbsp;&nbsp;<a href="#">汽车/配件/用品</a></li>
+                            <div class="throw" data-id="car">
+                                    <ul>
+                                            <ul class="thorw-item clearfloat">
+                                                <li class="thorw-title">当季流行&gt;</li>
+                                                <ul class="thorw-context">
+                                                    <li class="thorw-context-item red-color">女装新品</li>
+                                                    <li class="thorw-context-item">商场同款</li>
+                                                    <li class="thorw-context-item red-color">仙女连衣裙</li>
+                                                    <li class="thorw-context-item">T恤衬衫</li>
+                                                    <li class="thorw-context-item">时髦外套</li>
+                                                    <li class="thorw-context-item">休闲裤</li>
+                                                    <li class="thorw-context-item">牛仔裤</li>
+                                                    <li class="thorw-context-item red-color">无痕文胸</li>
+                                                    <li class="thorw-context-item">运动文胸</li>
+                                                    <li class="thorw-context-item red-color">潮流家居服</li>
+                                                    <li class="thorw-context-item">百搭船袜</li>
+                                                </ul>
+                                                <li class="thorw-title">精选上装&gt;</li>
+                                                <ul class="thorw-context">
+                                                    <li class="thorw-context-item">女装新品</li>
+                                                    <li class="thorw-context-item">商场同款</li>
+                                                    <li class="thorw-context-item">仙女连衣裙</li>
+                                                    <li class="thorw-context-item">T恤衬衫</li>
+                                                    <li class="thorw-context-item">时髦外套</li>
+                                                    <li class="thorw-context-item">休闲裤</li>
+                                                    <li class="thorw-context-item">牛仔裤</li>
+                                                    <li class="thorw-context-item">无痕文胸</li>
+                                                    <li class="thorw-context-item">运动文胸</li>
+                                                    <li class="thorw-context-item">潮流家居服</li>
+                                                    <li class="thorw-context-item">百搭船袜</li>
+                                                </ul>
+                                                <li class="thorw-title">浪漫裙装&gt;</li>
+                                                <ul class="thorw-context">
+                                                    <li class="thorw-context-item">女装新品</li>
+                                                    <li class="thorw-context-item">商场同款</li>
+                                                    <li class="thorw-context-item">仙女连衣裙</li>
+                                                    <li class="thorw-context-item">T恤衬衫</li>
+                                                    <li class="thorw-context-item">时髦外套</li>
+                                                    <li class="thorw-context-item">休闲裤</li>
+                                                    <li class="thorw-context-item">牛仔裤</li>
+                                                    <li class="thorw-context-item">无痕文胸</li>
+                                                    <li class="thorw-context-item">运动文胸</li>
+                                                    <li class="thorw-context-item">潮流家居服</li>
+                                                    <li class="thorw-context-item">百搭船袜</li>
+                                                </ul>
+                                            </ul>
+                                        </ul>
+                            </div>
+                            <li class="inline-item" id="home-textile">&nbsp;&nbsp;<img src="image/家纺家饰.png" width="20px" height="20px">&nbsp;&nbsp;<a href="#">家纺/家饰/鲜花</a></li>
+                            <div class="throw" data-id="home-textile">
+                                    <ul>
+                                            <ul class="thorw-item clearfloat">
+                                                <li class="thorw-title">当季流行&gt;</li>
+                                                <ul class="thorw-context">
+                                                    <li class="thorw-context-item red-color">女装新品</li>
+                                                    <li class="thorw-context-item">商场同款</li>
+                                                    <li class="thorw-context-item red-color">仙女连衣裙</li>
+                                                    <li class="thorw-context-item">T恤衬衫</li>
+                                                    <li class="thorw-context-item">时髦外套</li>
+                                                    <li class="thorw-context-item">休闲裤</li>
+                                                    <li class="thorw-context-item">牛仔裤</li>
+                                                    <li class="thorw-context-item red-color">无痕文胸</li>
+                                                    <li class="thorw-context-item">运动文胸</li>
+                                                    <li class="thorw-context-item red-color">潮流家居服</li>
+                                                    <li class="thorw-context-item">百搭船袜</li>
+                                                </ul>
+                                                <li class="thorw-title">精选上装&gt;</li>
+                                                <ul class="thorw-context">
+                                                    <li class="thorw-context-item">女装新品</li>
+                                                    <li class="thorw-context-item">商场同款</li>
+                                                    <li class="thorw-context-item">仙女连衣裙</li>
+                                                    <li class="thorw-context-item">T恤衬衫</li>
+                                                    <li class="thorw-context-item">时髦外套</li>
+                                                    <li class="thorw-context-item">休闲裤</li>
+                                                    <li class="thorw-context-item">牛仔裤</li>
+                                                    <li class="thorw-context-item">无痕文胸</li>
+                                                    <li class="thorw-context-item">运动文胸</li>
+                                                    <li class="thorw-context-item">潮流家居服</li>
+                                                    <li class="thorw-context-item">百搭船袜</li>
+                                                </ul>
+                                                <li class="thorw-title">浪漫裙装&gt;</li>
+                                                <ul class="thorw-context">
+                                                    <li class="thorw-context-item">女装新品</li>
+                                                    <li class="thorw-context-item">商场同款</li>
+                                                    <li class="thorw-context-item">仙女连衣裙</li>
+                                                    <li class="thorw-context-item">T恤衬衫</li>
+                                                    <li class="thorw-context-item">时髦外套</li>
+                                                    <li class="thorw-context-item">休闲裤</li>
+                                                    <li class="thorw-context-item">牛仔裤</li>
+                                                    <li class="thorw-context-item">无痕文胸</li>
+                                                    <li class="thorw-context-item">运动文胸</li>
+                                                    <li class="thorw-context-item">潮流家居服</li>
+                                                    <li class="thorw-context-item">百搭船袜</li>
+                                                </ul>
+                                            </ul>
+                                        </ul>
+                            </div>
+                            <li class="inline-item" id="medicine">&nbsp;&nbsp;<img src="image/医药 .png" width="20px" height="20px">&nbsp;&nbsp;<a href="#">医药保健</a></li>
+                            <div class="throw" data-id="medicine">
+                                    <ul>
+                                            <ul class="thorw-item clearfloat">
+                                                <li class="thorw-title">当季流行&gt;</li>
+                                                <ul class="thorw-context">
+                                                    <li class="thorw-context-item red-color">女装新品</li>
+                                                    <li class="thorw-context-item">商场同款</li>
+                                                    <li class="thorw-context-item red-color">仙女连衣裙</li>
+                                                    <li class="thorw-context-item">T恤衬衫</li>
+                                                    <li class="thorw-context-item">时髦外套</li>
+                                                    <li class="thorw-context-item">休闲裤</li>
+                                                    <li class="thorw-context-item">牛仔裤</li>
+                                                    <li class="thorw-context-item red-color">无痕文胸</li>
+                                                    <li class="thorw-context-item">运动文胸</li>
+                                                    <li class="thorw-context-item red-color">潮流家居服</li>
+                                                    <li class="thorw-context-item">百搭船袜</li>
+                                                </ul>
+                                                <li class="thorw-title">精选上装&gt;</li>
+                                                <ul class="thorw-context">
+                                                    <li class="thorw-context-item">女装新品</li>
+                                                    <li class="thorw-context-item">商场同款</li>
+                                                    <li class="thorw-context-item">仙女连衣裙</li>
+                                                    <li class="thorw-context-item">T恤衬衫</li>
+                                                    <li class="thorw-context-item">时髦外套</li>
+                                                    <li class="thorw-context-item">休闲裤</li>
+                                                    <li class="thorw-context-item">牛仔裤</li>
+                                                    <li class="thorw-context-item">无痕文胸</li>
+                                                    <li class="thorw-context-item">运动文胸</li>
+                                                    <li class="thorw-context-item">潮流家居服</li>
+                                                    <li class="thorw-context-item">百搭船袜</li>
+                                                </ul>
+                                                <li class="thorw-title">浪漫裙装&gt;</li>
+                                                <ul class="thorw-context">
+                                                    <li class="thorw-context-item">女装新品</li>
+                                                    <li class="thorw-context-item">商场同款</li>
+                                                    <li class="thorw-context-item">仙女连衣裙</li>
+                                                    <li class="thorw-context-item">T恤衬衫</li>
+                                                    <li class="thorw-context-item">时髦外套</li>
+                                                    <li class="thorw-context-item">休闲裤</li>
+                                                    <li class="thorw-context-item">牛仔裤</li>
+                                                    <li class="thorw-context-item">无痕文胸</li>
+                                                    <li class="thorw-context-item">运动文胸</li>
+                                                    <li class="thorw-context-item">潮流家居服</li>
+                                                    <li class="thorw-context-item">百搭船袜</li>
+                                                </ul>
+                                            </ul>
+                                        </ul>
+                            </div>
+                            <li class="inline-item" id="kitchenware">&nbsp;&nbsp;<img src="image/厨具.png" width="20px" height="20px">&nbsp;&nbsp;<a href="#">厨具/收纳/宠物</a></li>
+                            <div class="throw" data-id="kitchenware">
+                                    <ul>
+                                            <ul class="thorw-item clearfloat">
+                                                <li class="thorw-title">当季流行&gt;</li>
+                                                <ul class="thorw-context">
+                                                    <li class="thorw-context-item red-color">女装新品</li>
+                                                    <li class="thorw-context-item">商场同款</li>
+                                                    <li class="thorw-context-item red-color">仙女连衣裙</li>
+                                                    <li class="thorw-context-item">T恤衬衫</li>
+                                                    <li class="thorw-context-item">时髦外套</li>
+                                                    <li class="thorw-context-item">休闲裤</li>
+                                                    <li class="thorw-context-item">牛仔裤</li>
+                                                    <li class="thorw-context-item red-color">无痕文胸</li>
+                                                    <li class="thorw-context-item">运动文胸</li>
+                                                    <li class="thorw-context-item red-color">潮流家居服</li>
+                                                    <li class="thorw-context-item">百搭船袜</li>
+                                                </ul>
+                                                <li class="thorw-title">精选上装&gt;</li>
+                                                <ul class="thorw-context">
+                                                    <li class="thorw-context-item">女装新品</li>
+                                                    <li class="thorw-context-item">商场同款</li>
+                                                    <li class="thorw-context-item">仙女连衣裙</li>
+                                                    <li class="thorw-context-item">T恤衬衫</li>
+                                                    <li class="thorw-context-item">时髦外套</li>
+                                                    <li class="thorw-context-item">休闲裤</li>
+                                                    <li class="thorw-context-item">牛仔裤</li>
+                                                    <li class="thorw-context-item">无痕文胸</li>
+                                                    <li class="thorw-context-item">运动文胸</li>
+                                                    <li class="thorw-context-item">潮流家居服</li>
+                                                    <li class="thorw-context-item">百搭船袜</li>
+                                                </ul>
+                                                <li class="thorw-title">浪漫裙装&gt;</li>
+                                                <ul class="thorw-context">
+                                                    <li class="thorw-context-item">女装新品</li>
+                                                    <li class="thorw-context-item">商场同款</li>
+                                                    <li class="thorw-context-item">仙女连衣裙</li>
+                                                    <li class="thorw-context-item">T恤衬衫</li>
+                                                    <li class="thorw-context-item">时髦外套</li>
+                                                    <li class="thorw-context-item">休闲裤</li>
+                                                    <li class="thorw-context-item">牛仔裤</li>
+                                                    <li class="thorw-context-item">无痕文胸</li>
+                                                    <li class="thorw-context-item">运动文胸</li>
+                                                    <li class="thorw-context-item">潮流家居服</li>
+                                                    <li class="thorw-context-item">百搭船袜</li>
+                                                </ul>
+                                            </ul>
+                                        </ul>
+                            </div>
+                            <li class="inline-item" id="books">&nbsp;&nbsp;<img src="image/图书音像.png" width="20px" height="20px">&nbsp;&nbsp;<a href="#">图书音像</a></li>
+                            <div class="throw" data-id="books">
+                                    <ul>
+                                            <ul class="thorw-item clearfloat">
+                                                <li class="thorw-title">当季流行&gt;</li>
+                                                <ul class="thorw-context">
+                                                    <li class="thorw-context-item red-color">女装新品</li>
+                                                    <li class="thorw-context-item">商场同款</li>
+                                                    <li class="thorw-context-item red-color">仙女连衣裙</li>
+                                                    <li class="thorw-context-item">T恤衬衫</li>
+                                                    <li class="thorw-context-item">时髦外套</li>
+                                                    <li class="thorw-context-item">休闲裤</li>
+                                                    <li class="thorw-context-item">牛仔裤</li>
+                                                    <li class="thorw-context-item red-color">无痕文胸</li>
+                                                    <li class="thorw-context-item">运动文胸</li>
+                                                    <li class="thorw-context-item red-color">潮流家居服</li>
+                                                    <li class="thorw-context-item">百搭船袜</li>
+                                                </ul>
+                                                <li class="thorw-title">精选上装&gt;</li>
+                                                <ul class="thorw-context">
+                                                    <li class="thorw-context-item">女装新品</li>
+                                                    <li class="thorw-context-item">商场同款</li>
+                                                    <li class="thorw-context-item">仙女连衣裙</li>
+                                                    <li class="thorw-context-item">T恤衬衫</li>
+                                                    <li class="thorw-context-item">时髦外套</li>
+                                                    <li class="thorw-context-item">休闲裤</li>
+                                                    <li class="thorw-context-item">牛仔裤</li>
+                                                    <li class="thorw-context-item">无痕文胸</li>
+                                                    <li class="thorw-context-item">运动文胸</li>
+                                                    <li class="thorw-context-item">潮流家居服</li>
+                                                    <li class="thorw-context-item">百搭船袜</li>
+                                                </ul>
+                                                <li class="thorw-title">浪漫裙装&gt;</li>
+                                                <ul class="thorw-context">
+                                                    <li class="thorw-context-item">女装新品</li>
+                                                    <li class="thorw-context-item">商场同款</li>
+                                                    <li class="thorw-context-item">仙女连衣裙</li>
+                                                    <li class="thorw-context-item">T恤衬衫</li>
+                                                    <li class="thorw-context-item">时髦外套</li>
+                                                    <li class="thorw-context-item">休闲裤</li>
+                                                    <li class="thorw-context-item">牛仔裤</li>
+                                                    <li class="thorw-context-item">无痕文胸</li>
+                                                    <li class="thorw-context-item">运动文胸</li>
+                                                    <li class="thorw-context-item">潮流家居服</li>
+                                                    <li class="thorw-context-item">百搭船袜</li>
+                                                </ul>
+                                            </ul>
+                                        </ul>
+                            </div>
+                        </ul>
+
+                    </ul>
+                </div>
+                <ul>
+                    <li class="f-l"><img src="image/TB1ztBlaMMPMeJjy1XbXXcwxVXa-200-60.png" alt="天猫超市"></li>
+                    <li class="f-l"><img src="image/TB1t5ObaBxRMKJjy0FdXXaifFXa-200-60.png" alt="天猫国际"></li>
+                    <li class="item">天猫会员</li>
+                    <li class="item">电器城</li>
+                    <li class="item">喵鲜生</li>
+                    <li class="item">医药馆</li>
+                    <li class="item">营业厅</li>
+                    <li class="item">魅力惠</li>
+                    <li class="item">飞猪旅行</li>
+                    <li class="item">苏宁易购</li>
+                </ul>
+            </div>
+            <div id="banner" class="carousel slide" data-ride="carousel">
+                <ul class="carousel-indicators">
+                    <li data-target="#banner" data-slide-to="0" class="active"></li>
+                    <li data-target="#banner" data-slide-to="1"></li>
+                    <li data-target="#banner" data-slide-to="2"></li>
+                    <li data-target="#banner" data-slide-to="3"></li>
+                    <li data-target="#banner" data-slide-to="4"></li>
+                </ul>
+                
+                <div class="carousel-inner">
+                    <div class="carousel-item active"><img src="image/lunbo/1.jpg"></div>
+                    <div class="carousel-item"><img src="image/lunbo/2.jpg"></div>
+                    <div class="carousel-item"><img src="image/lunbo/3.jpg"></div>
+                    <div class="carousel-item"><img src="image/lunbo/4.jpg"></div>
+                    <div class="carousel-item"><img src="image/lunbo/5.jpg"></div>
+                </div>
+            </div>
+
+        </div>
+        <div class="index-product-module">
+            <div class="product clearfloat">
+                <div class="activity">
+                        <div class="activities">
+                            <div class="five-memories"></div>
+                            <div class="activities-img">
+                                <a href="#"><img src="image/医药477x539.png" alt="医药" width="238px"></a>
+                                <a href="#"><img src="image/名酒477x540.png" alt="名酒" width="238px"></a>
+                                <a href="#"><img src="image/奶粉.png" alt="奶粉" width="238px"></a>
+                                <a href="#"><img src="image/手机477x540.png" alt="手机" width="238px"></a>
+                                <a href="#"><img src="image/家电.png" alt="家电" width="238px"></a>
+                            </div>
+                        </div>
+                </div>
+                <div class="brand">
+                        <div class="sale">
+                            <div class="text">品牌闪购 BRAND SALE<span class="more iconfont">&#xe601;</span></div>
+                            <img src="image/RKJ]QJD{93FFPVM4$_O(`D4.png" width="234px">
+                        </div>
+                        <div class="luxury">
+                            <div class="text">聚名品LUXURY CHANNEL<span class="more iconfont">更多&nbsp;&#xe601;</span></div>                            <img src="image/S998Z~(3D6JDU4EA1AWZ10G.png" width="485px">
+                            </div>
+                        <div class="luxury">
+                            <div class="text">品牌活动BRAND ACTIVITY<span class="more iconfont">更多&nbsp;&#xe601;</span></div>
+                            <img src="image/0VV6I0@QFTQG1`U_5]1QA8B.png" width="485px">
+                        </div>
+                </div>
+                <div class="supermarket clearfloat">
+                    <div class="supermarket-logo clearfloat"></div>
+                    <div class="hot-word clearfloat">
+                        <a href="#">进口食品</a>
+                        <a href="#">食品饮料</a>
+                        <a href="#">粮油副食</a>
+                        <a href="#">美容洗护</a>
+                        <a href="#">家居家电</a>
+                        <a href="#">家庭清洁</a>
+                        <a href="#">母婴用品</a>
+                        <a href="#">生鲜水果</a>
+                    </div>
+                    <div class="supermarket-item clearfloat">
+                        <div class="img-text clearfloat">
+                            <div class="square clearfloat">天猫<br>超市</div>
+                            <div class="i-text">中秋吃健康<br>第2件0元</div>
+                        </div>
+                        <img src="image/TB1ai_svYZnBKNjSZFhXXc.oXXa-468-1236.png" width="235px" height="618px"></div>
+                    <div class="tabs clearfloat">
+                        <div class="tabs-tab">
+                            <ul class="tabs-content">
+                                <li>
+                                    <p id="oil" class="tab-title highlight clearfloat">今日疯抢</p>
+                                </li>
+                                <li>
+                                    <p id="laundry" class="tab-title clearfloat">量贩装</p>
+                                </li>
+                            </ul>
+                            <div id="show" style="display: block">
+                                <div class="left-detail clearfloat">
+                                    <div class="detail-icon clearfloat"></div>
+                                    <span class="detail-text-big">粮油调味</span>
+                                </div>
+                                <div class="detail-text">爆款直降</div>
+                                <div class="tab-detail clearfloat">
+                                    <a href="#"><img src="image/TB1jNScP6TpK1RjSZKPXXa3UpXa-400-400.jpg" height="225px"></a>
+                                </div>
+                            </div>
+                            <div id="hide" style="display: none">
+                                <div class="left-detail clearfloat">
+                                        <div class="detail-icon clearfloat"></div>
+                                        <span class="detail-text-big">汰渍洗衣液</span>
+                                    </div>
+                                    <div class="detail-text">2套减五</div>
+                                    <div class="tab-detail clearfloat">
+                                        <a href="#"><img src="image/TB1Z6puS7zoK1RjSZFlXXai4VXa-400-400.jpg" height="225px"></a>
+                                    </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                        <div class="tab-item">
+                            <img src="image/O1CN01ZoNC2M28vIho7ffm1_!!0-item_pic.jpg" width="185px" height="185px">
+                            <div class="tab-item-text">金龙鱼 葵花籽清香型<br>食用植物调和油5L/桶</div>
+                            <div class="tab-item-price red-color">￥36.9</div>
+                        </div>
+                        <div class="tab-item">
+                            <img src="image/O1CN0116y2y428vIhtXkoPc_!!725677994-0-sm.jpg" width="185px" height="185px">
+                            <div class="tab-item-text">蒙牛低脂高钙牛奶<br>250ml*16盒低脂肪高钙质</div>
+                            <div class="tab-item-price red-color">￥51.2</div>
+                        </div>
+                        <div class="tab-item">
+                            <img src="image/O1CN01DaxdMS28vIhrVtZAK_!!0-item_pic.jpg" width="185px" height="185px">
+                            <div class="tab-item-text">立白茶籽洗洁精<br>1.45KG*2*2 茶籽精华</div>
+                            <div class="tab-item-price red-color">￥49.9</div>
+                        </div>
+                        <div class="tab-item">
+                            <img src="image/O1CN01IwRxgL28vIhsheuNu_!!0-item_pic.jpg" width="185px" height="185px">
+                            <div class="tab-item-text">心相印抽纸茶语纸巾3<br>层120抽30包家用面巾纸</div>
+                            <div class="tab-item-price red-color">￥66.9</div>
+                        </div>
+                        <div class="tab-item">
+                            <img src="image/O1CN01OE5DBw28vIhr90bIY_!!0-item_pic.jpg" width="185px" height="185px">
+                            <div class="tab-item-text">威露士深层洁净洗衣<br>液2瓶装（共6kg）</div>
+                            <div class="tab-item-price red-color">￥59.9</div>
+                        </div>
+                        <div class="tab-item">
+                            <img src="image/O1CN01wIxoLw28vIhnUEqOn_!!0-item_pic.jpg" width="185px" height="185px">
+                            <div class="tab-item-text">光明米业东北黑土香<br>米5kg 黑土生长东北香米</div>
+                            <div class="tab-item-price red-color">￥49</div>
+                        </div>
+                </div>
+                <div class="horizontal-bar"></div>
+                <div class="end"></div>
+            </div>
+        </div>
+        <div class="carouselBackgroundDiv"></div>
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="footer-img">
+                <a href="#"><img src="image/quality.png" alt="品质"></a>
+                <a href="#"><img src="image/reason.png" alt="无理由"></a>
+                <a href="#"><img src="image/help.jpg" alt="帮助中心"></a>
+                <a href="#"><img src="image/Characteristic.png" alt="特色"></a>
+            </div>
+            <div class="footer-desc">
+                <dl>
+                    <dt>购物指南</dt>
+                    <a href="#"><dd>免费注册</dd></a>
+                    <a href="#"><dd>开通支付宝</dd></a>
+                    <a href="#"><dd>支付宝充值</dd></a>
+                    <dd class="cat"></dd>
+                </dl>
+                <dl>
+                    <dt>天猫保障</dt>
+                    <dd>发票保障</dd>
+                    <dd>售后规则</dd>
+                    <dd>缺货赔付</dd>
+                </dl>
+                <dl>
+                    <dt>支付方式</dt>
+                    <dd>快捷支付</dd>
+                    <dd>信用卡</dd>
+                    <dd>余额宝</dd>
+                    <dd>蚂蚁花呗</dd>
+                    <dd>货到付款</dd>
+                </dl>
+                <dl>
+                    <dt>商家服务</dt>
+                    <dd>天猫入驻</dd>
+                    <dd>商家中心</dd>
+                    <dd>天猫智库</dd>
+                    <dd>物流服务</dd>
+                    <dd>喵言喵语</dd>
+                    <dd>运营服务</dd>
+                </dl>
+                <dl>
+                    <dt>手机天猫</dt>
+                    <dd class="qrcode"><a href="#"></a></dd>
+                </dl>
+
+            </div>
+            <div class="copyright">
+                <div class="footer-info">
+                    <p class="info">
+                        关于天猫 帮助中心 开放平台 诚聘英才 联系我们 网站合作 法律声明 隐私权政策 知识产权 廉正举报 规则意见征集
+                    </p>
+                    <p class="info">
+                        阿里巴巴集团 | 淘宝网 | 天猫 | 聚划算 | 全球速卖通 | 阿里巴巴国际交易市场| 1688 | 阿里妈妈 | 飞猪 | 阿里云计算 | AliOS | 阿里通信 | 万网 | 高德 | UC | 友盟 | 虾米 | 钉钉 | 支付宝
+                    </p>
+                    <div class="footer-copyright">
+                        <span>增值电信业务经营许可证： 浙B2-20110446</span> <span>市场名称登记证：工商网市字3301004119号</span> <span>出版物网络交易平台服务经营备案证： 新出发浙备字第001号 </span>
+                        <br>
+                        <span>互联网违法和不良信息举报电话：0571-81683755 blxxjb@alibaba-inc.com</span><span>互联网药品信息服务资质证书编号：浙-（经营性）-2017-000</span><span><img src="image/TB1yEqRPXXXXXXPXpXXXXXXXXXX-20-20.png" width="20px" height="20px">浙公网安备 33010002000120号</span>
+                        <br>
+                        <span>医疗器械网络交易服务第三方平台备案：（浙）网械平台备字[2018]第00002号</span><span>互联网药品交易服务资格证书：国A20150001 </span>
+                        <br>
+                        <span>浙江省网络食品销售第三方平台提供者备案：浙网食A33010002</span><span> 12318举报</span>
+                        <br>
+                        <span>© 2003-2019 TMALL.COM 版权所有</span>
+                        <br>
+                        <img src="image/TB1MQX3cBr0gK0jSZFnXXbRRXXa-65-70.gif" width="30px" height="32px">
+                        <img src="image/TB13mgzHXXXXXbjXVXXzby4IVXX-80-30.jpg" width="80px" height="30px">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+</body>
+</html>

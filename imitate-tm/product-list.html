@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>product-list</title>
+    <link rel="stylesheet" href="css/product-list.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/public.css">
+    <script src="js/function.js"></script>
+    <script src="js/event.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="top">
+            <div class="center">
+                <p class="f-l"><em>喵，欢迎来天猫</em>
+                    <a href="#">请登录</a>
+                    <a href="#">免费注册</a>
+                </p>
+                <ul class="float-right">
+                    <li id="mytb" class="top-item">
+                        <a  href="#">我的淘宝</a>
+                        <ul data-id="mytb" class="mytb-item">
+                            <li><a href="#">已买到的宝贝</a></li>
+                            <li><a href="#">已卖出的宝贝</a></li>
+                        </ul>
+                    </li>
+                    <li class="top-item"><a href="#">购物车<strong>0</strong>件</a></li>
+                    <li id="mycot" class="top-item">
+                        <a href="#">收藏夹</a>
+                        <ul data-id="mycot" class="mycot-item">
+                            <li><a href="#">收藏的宝贝</a></li>
+                            <li><a href="#">收藏的店铺</a></li>
+                        </ul>
+                    </li>
+                    <li class="top-item">|</li> 
+                    <li id="qrcode" class="top-item">
+                        <a href="#">手机版</a>
+                        <div data-id="qrcode" class="qrcode"><img src="image/qrCode.jpg" width="205px"></div>
+                    </li>
+                    <li class="top-item"><a href="#">淘宝网</a></li>
+                    <li id="merchant" class="top-item">
+                        <a href="#">商家支持</a>
+                        <ul data-id="merchant" class="merchant-item">
+                            <li class="merchant-item-title">商家:</li>
+                            <li class="merchant-item-text">商家中心</li>
+                            <li class="merchant-item-text">天猫规则</li>
+                            <li class="merchant-item-text">商品入驻</li>
+                            <li class="merchant-item-text">运营服务</li>
+                            <li class="merchant-item-text">商家品控</li>
+                            <li class="merchant-item-text">商家工具</li>
+                            <li class="merchant-item-text">天猫智库</li>
+                            <li class="merchant-item-text">喵言喵语</li>
+                            <li>----------------------------</li>
+                            <li class="merchant-item-title">帮助：</li>
+                            <li class="merchant-item-text">帮助中心</li>
+                            <li class="merchant-item-text">问商友</li>
+                        </ul>
+                    </li>
+                    <li class="top-item"><a href="#">网站导航</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="header">
+            <div class="procduct-page-logo"></div>
+            <div class="search">
+                <input type="text" placeholder=" 搜索 天猫 商品/品牌/店铺">
+                <button class="search-btn" type="submit">搜索</button>
+                <div class="prompt">
+                    <ul class="float-left">
+                        <li class="item">空调挂机</li>
+                        <li class="interval">|</li>
+                        <li class="item">格力空调</li>
+                        <li class="interval">|</li>
+                        <li class="item">美的空调</li>
+                        <li class="interval">|</li>
+                        <li class="item">变频空调</li>
+                        <li class="interval">|</li>
+                        <li class="item">中央空调</li>
+                        <li class="interval">|</li>
+                        <li class="item">海尔空调</li>
+                        <li class="interval">|</li>
+                        <li class="item">立式空调</li>
+                        <li class="interval">|</li>
+                        <li class="item">大金空调</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </header>
+    <main>        
+        <div class="top-screening">
+            <div class="crumb">
+                <div class="search">
+                    全部 &nbsp;&gt;&nbsp;
+                    <div class="search-icon"></div>
+                    <input type="search">
+                </div>
+                <div class="count clearfloat">共 600795件相关商品</div>
+            </div>
+            <div class="brand-show">
+                <div class="rect"><p class="text">品牌</p></div>
+                <div class="content">
+                    <ul>
+                        <li class="item">Gree/格力</li>
+                        <li class="item">Midea/美的</li>
+                        <li class="item">Haier/海尔</li>
+                        <li class="item">Panasonic/松下</li>
+                        <li class="item">AUX/奥克斯</li>
+                        <li class="item">Kelon/科龙</li>
+                        <li class="item">TCL</li>
+                        <li class="item">Hisense/海信</li>
+                        <li class="item">Chigo/志高</li>
+                        <li class="item">Yair</li>
+                        <li class="item">Changhong/长虹</li>
+                    </ul>
+                </div>
+                <div class="brand-btn">
+                    <button class="multiple">&nbsp;+&nbsp;多选</button>
+                    <a href="#" class="more">更多&nbsp;&nu;&nbsp;</a>
+                </div>
+            </div>
+            <div class="brand-hide">
+                    <div class="rect"><p class="text">品牌</p></div>
+                    <div class="content-hide">
+                        <ul>
+                            <li class="item">Gree/格力</li>
+                            <li class="item">Midea/美的</li>
+                            <li class="item">Haier/海尔</li>
+                            <li class="item">Panasonic/松下</li>
+                            <li class="item">AUX/奥克斯</li>
+                            <li class="item">Kelon/科龙</li>
+                            <li class="item">TCL</li>
+                            <li class="item">Hisense/海信</li>
+                            <li class="item">Chigo/志高</li>
+                            <li class="item">Yair</li>
+                            <li class="item">Changhong/长虹</li>
+                            <li class="item">Gree/格力</li>
+                            <li class="item">Midea/美的</li>
+                            <li class="item">Haier/海尔</li>
+                            <li class="item">Panasonic/松下</li>
+                            <li class="item">AUX/奥克斯</li>
+                            <li class="item">Kelon/科龙</li>
+                            <li class="item">TCL</li>
+                            <li class="item">Hisense/海信</li>
+                            <li class="item">Chigo/志高</li>
+                            <li class="item">Yair</li>
+                            <li class="item">Changhong/长虹</li>
+                            <li class="item">Gree/格力</li>
+                            <li class="item">Midea/美的</li>
+                            <li class="item">Haier/海尔</li>
+                            <li class="item">Panasonic/松下</li>
+                            <li class="item">AUX/奥克斯</li>
+                            <li class="item">Kelon/科龙</li>
+                            <li class="item">TCL</li>
+                            <li class="item">Hisense/海信</li>
+                            <li class="item">Chigo/志高</li>
+                            <li class="item">Yair</li>
+                            <li class="item">Changhong/长虹</li>
+                            <li class="item">Gree/格力</li>
+                            <li class="item">Midea/美的</li>
+                            <li class="item">Haier/海尔</li>
+                            <li class="item">Panasonic/松下</li>
+                            <li class="item">AUX/奥克斯</li>
+                            <li class="item">Kelon/科龙</li>
+                            <li class="item">TCL</li>
+                            <li class="item">Hisense/海信</li>
+                            <li class="item">Chigo/志高</li>
+                            <li class="item">Yair</li>
+                            <li class="item">Changhong/长虹</li>
+                            <li class="item">Gree/格力</li>
+                            <li class="item">Midea/美的</li>
+                            <li class="item">Haier/海尔</li>
+                            <li class="item">Panasonic/松下</li>
+                            <li class="item">AUX/奥克斯</li>
+                            <li class="item">Kelon/科龙</li>
+                            <li class="item">TCL</li>
+                            <li class="item">Hisense/海信</li>
+                            <li class="item">Chigo/志高</li>
+                            <li class="item">Yair</li>
+                            <li class="item">Changhong/长虹</li>
+                            <li class="item">Gree/格力</li>
+                            <li class="item">Midea/美的</li>
+                            <li class="item">Haier/海尔</li>
+                            <li class="item">Panasonic/松下</li>
+                            <li class="item">AUX/奥克斯</li>
+                            <li class="item">Kelon/科龙</li>
+                            <li class="item">TCL</li>
+                            <li class="item">Hisense/海信</li>
+                            <li class="item">Chigo/志高</li>
+                            <li class="item">Yair</li>
+                            <li class="item">Changhong/长虹</li>
+                        </ul>
+                    </div>
+                    <div class="brand-btn">
+                        <button class="multiple">&nbsp;+&nbsp;多选</button>
+                        <a href="#" class="more">收起&nbsp;&and;&nbsp;</a>
+                    </div>
+            </div>
+            <div class="filler">
+                <div class="fSort"><a href="#">综合</a></div>
+                <div class="fSort"><a href="#">人气</a></div>
+                <div class="fSort"><a href="#">新品</a></div>
+                <div class="fSort"><a href="#">销量</a></div>
+                <div class="fSort"><a href="#">价格</a></div>
+                <form>
+                    <div class="fprice">
+                        <input class="fprice-input price-floor" type="text" placeholder="￥请输入">
+                        <span class="hor">-</span>
+                        <input class="fprice-input price-ceil" type="text" placeholder="￥请输入">
+                    </div>
+                    <div class="checkbox clearfloat">
+                        <input type="checkbox">&nbsp;<img src="image/TB1aA.LdNz1gK0jSZSgXXavwpXa-111-32.png" height="15px;">
+                        <input type="checkbox" value="包邮">&nbsp;包邮
+                        <input type="checkbox" value="折扣">&nbsp;折扣
+                        <p>更多</p>
+                        <br>
+                        <div class="checkbox-hide">
+                            <input type="checkbox" value="搭配减价">搭配减价
+                            <input type="checkbox" value="搭配减价">满就减
+                            <input type="checkbox" value="搭配减价">货到付款
+                            <input type="checkbox" value="搭配减价">通用排序
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="product-list clearfloat">
+            <div class="product-img-lis">
+                <div><img src="image/O1CN01W4tGo22HOAYPFNBWw_!!2-item_pic.png" width="210px" height="210px"></div>
+                <p class="price" title="2299.00">￥2299.00</p>
+                <p class="brand">Midea/美的 KFR-35GW/WDCN8A3@ 大1.5匹变频冷暖壁挂式空调挂机</p>
+                <div class="merchant"><a href="#">美的官方旗舰店</a></div>
+                <p class="info">
+                    <span>月成交<strong>1.2万笔</strong> </span>
+                    <span>评价<a href="#">11万</a> </span>
+                    <span><a href="#"><img src="image/site/wangwang.png" alt="alww"></a></span>
+                </p>
+            </div>
+            <div class="product-img-lis">
+                <div><img src="image/O1CN01aDVuCL2HOAXFRhc84_!!201749140.png" width="210px" height="210px"></div>
+                <p class="price"  title="2099.00">2099.00</p>
+                <p class="brand">Midea/美的 KFR-35GW/WCBD3@ 大1.5匹智能冷暖壁挂式家用空调挂机</p>
+                <div class="merchant"><a href="#">美的官方旗舰店</a></div>
+                <p class="info">
+                    <span>月成交<strong>3626笔</strong> </span>
+                    <span>评价<a href="#">4.9万</a> </span>
+                    <span><a href="#"><img src="image/site/wangwang.png" alt="alww"></a></span>
+                </p>
+            </div>
+            <div class="product-img-lis">
+                <div><img src="image/O1CN01FArWh01cOipKGOJkQ_!!3079263591.jpg" width="210px" height="210px"></div>
+                <p class="price"  title="1999.00">1999.00</p>
+                <p class="brand">Gree/格力 KFR-35GW/NhBaB3大1.5匹变频冷暖型壁挂式空调挂机风采</p>
+                <div class="merchant"><a href="#">GREE格力官方旗舰店</a></div>
+                <p class="info">
+                    <span>月成交<strong>7638笔</strong> </span>
+                    <span>评价<a href="#">6.3万</a> </span>
+                    <span><a href="#"><img src="image/site/wangwang.png" alt="alww"></a></span>
+                </p>
+            </div>
+            <div class="product-img-lis">
+                <div><img src="image/O1CN01F5q5041VEuzRVWYbF_!!2095892622.jpg" width="210px" height="210px"></div>
+                <p class="price"  title="2499.00">2499.00</p>
+                <p class="brand">美的大一匹1P单冷定频壁挂式家用空调挂机KF-26GW/Y-DH400(D3)</p>
+                <div class="merchant"><a href="#">midea美的日邦专卖店</a></div>
+                <p class="info">
+                    <span>月成交<strong>4738笔</strong> </span>
+                    <span>评价<a href="#">2.4万</a> </span>
+                    <span><a href="#"><img src="image/site/wangwang.png" alt="alww"></a></span>
+                </p>
+            </div>
+            <div class="product-img-lis">
+                <div><img src="image/O1CN01aXEk8d29zFhNcEWBr_!!1714128138.jpg" width="210px" height="210px"></div>
+                <p class="price"  title="2599.00">2599.00</p>
+                <p class="brand">【到手价2599元】小米 米家大1.5PC1变频挂机智能空调官方正品</p>
+                <div class="merchant"><a href="#">小米官方旗舰店</a></div>
+                <p class="info">
+                    <span>月成交<strong>8478笔</strong> </span>
+                    <span>评价<a href="#">8.2万</a> </span>
+                    <span><a href="#"><img src="image/site/wangwang.png" alt="alww"></a></span>
+                </p>
+            </div>
+            <div class="product-img-lis">
+                <div><img src="image/O1CN01NlvRbg24Nd4qqjlqJ_!!1595477379.jpg" width="210px" height="210px"></div>
+                <p class="price"  title="2499.00">2499.00</p>
+                <p class="brand">Midea/美的 大1匹变频冷暖壁挂式家用空调挂机 KFR-26GW/WCBN8A3@</p>
+                <div class="merchant"><a href="#">美的空调旗舰店</a></div>
+                <p class="info">
+                    <span>月成交<strong>1826笔</strong> </span>
+                    <span>评价<a href="#">4627</a> </span>
+                    <span><a href="#"><img src="image/site/wangwang.png" alt="alww"></a></span>
+                </p>
+            </div>
+            <div class="product-img-lis">
+                <div><img src="image/O1CN01k62xQi1IOudmcvUOK_!!0-item_pic.gif" width="210px" height="210px"></div>
+                <p class="price "  title="2549.00">2549.00</p>
+                <p class="brand">Gree/格力 KFR-26GW/NhDcD3 大1匹空调挂机冷暖型定频家用 宁炫</p>
+                <div class="merchant"><a href="#">苏宁易购官方旗舰店</a></div>
+                <p class="info">
+                    <span>月成交<strong>6086笔</strong> </span>
+                    <span>评价<a href="#">5.3万</a> </span>
+                    <span><a href="#"><img src="image/site/wangwang.png" alt="alww"></a></span>
+                </p>
+            </div>
+            <div class="product-img-lis">
+                <div><img src="image/O1CN01apM1gi29zFg9R3YjG_!!1714128138.jpg" width="210px" height="210px"></div>
+                <p class="price"  title="1699.00">1699.00</p>
+                <p class="brand">【到手价1699元】小米 米家大1匹冷暖挂机空调官方旗舰店官方家用</p>
+                <div class="merchant"><a href="#">小米官方旗舰店</a></div>
+                <p class="info">
+                    <span>月成交<strong>6634笔</strong> </span>
+                    <span>评价<a href="#">1.0万</a> </span>
+                    <span></span>
+                </p>
+            </div>
+            <div class="product-img-lis">
+                <div><img src="image/O1CN01icINv31IOug9Be9YU_!!2616970884.jpg" width="210px" height="210px"></div>
+                <p class="price"  title="2299.00">2299.00</p>
+                <p class="brand">Midea/美的大1.5匹变频壁挂式智能冷暖空调挂机KFR-35GW/WDBN8A3@</p>
+                <div class="merchant"><a href="#">美的官方旗舰店</a></div>
+                <p class="info">
+                    <span>月成交<strong>4047笔</strong> </span>
+                    <span>评价<a href="#">6.5万</a> </span>
+                    <span><a href="#"><img src="image/site/wangwang.png" alt="alww"></a></span>
+                </p>
+            </div>
+            <div class="product-img-lis">
+                <div><img src="image/O1CN01MK32rZ24Nd4ov0dYM_!!1595477379.jpg" width="210px" height="210px"></div>
+                <p class="price"  title="2849.00">2849.00</p>
+                <p class="brand">Midea/美的 大1.5匹变频家用空调挂机 壁挂式 KFR-35GW/WCBN8A3@</p>
+                <div class="merchant"><a href="#">美的空调旗舰店</a></div>
+                <p class="info">
+                    <span>月成交<strong>5095笔</strong> </span>
+                    <span>评价<a href="#">1.2万 </a> </span>
+                    <span><a href="#"><img src="image/site/wangwang.png" alt="alww"></a></span>
+                </p>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

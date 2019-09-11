@@ -1,0 +1,463 @@
+
+.headerCon{
+    width: 1190px;
+    height: 90px;
+    margin: 0 auto;
+}
+
+.tmlogo{
+    float: left;
+    width: 230px;
+    height: 74px;
+    margin-top: 10px;
+    margin-right: 16px;
+    background: url('../image/Supermarketlogo.png');
+    background-repeat: no-repeat;
+}
+
+.headerCon .addr{
+    float: left;
+    width: 76px;
+    height: 36px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 36px;
+    margin-top: 25px;
+    border: #999 1px solid;
+}
+
+.headerCon .smSearchtop{
+    float: left;
+    width: 540px;
+    height: 61px;
+    padding-top: 18px;
+    margin-left: 50px;
+}
+
+.headerCon .smSearchtop input{
+    display: inline-block;
+    width: 460px;
+    height: 36px;
+    border: #FF0036 3px solid;
+    padding-left: 5px;
+}
+
+.headerCon .smSearch{
+    width: 540px;
+    height: 36px;
+    margin: 0 auto;
+    border: #FF0036 3px solid;
+}
+
+.headerCon .smsearch-btn{
+    display: inline-block;
+    position: absolute;
+    width: 80px;
+    height: 36px;
+    border: 1px solid transparent;
+    background-color: #FF0036;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+main {
+    width: 1190px;
+    margin: 0 auto;
+}
+
+header .hr{
+    position: absolute;
+    width: 100%;
+    margin-top: 35px;
+    border-top: #000 1px solid;
+}
+
+main .nav-bar{
+    height: 36px;
+}
+
+
+.nav-bar .sort{
+    float: left;
+    width: 240px;
+    height: 36px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 36px;
+    font-weight: 550;
+    color: #fff;
+    background-color: #000;
+}
+
+.nav-bar .item{
+    float: left;
+    font-size: 18px;
+    line-height: 36px;
+    font-weight: 550;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+main .detail-top{
+    float: left;
+    width: 990px;
+    height: 604px;
+    margin-top: 40px;
+    margin-bottom: 50px;
+
+}
+
+main .tabBarBox{
+    width: 790px;
+    height: 50px;
+    margin: 0 auto;
+    background-color: #fff;
+    border: #999 1px solid;
+    clear: both;
+}
+
+.tabBarBox .box{
+    float: left;
+    height: 50px;
+    line-height: 50px;
+    padding-left: 15px;
+    margin-top: -1px;
+}
+
+.tabBarBox .red-bd{
+    border-top: #FF0036 2px solid;
+    border-left: #999 1px solid;
+    border-right: #999 1px solid;
+    color: #FF0036;
+}
+
+.tabBarBox .box span{
+    border-right: #999 1px solid;
+    padding-right: 15px;
+    margin-right: -1px;
+}
+
+.detail-top .product-imgs{
+    float: left;
+    width: 460px;
+    height: 604px;
+}
+
+.detail-top .big-product{
+    padding: 20px 20px 0 20px;
+}
+
+.detail-top .small-img{
+    width: 420px;
+    margin: 0 auto;
+}
+
+.detail-top .sm-img{
+    float: left;
+    margin-top: 22px;
+    margin-left: 22px;
+}
+
+.detail-top .coll{
+    width: 460px;
+    height: 82px;
+    padding: 50px;
+}
+
+.detail-top .coll span{
+    float: right;
+}
+
+.detail-top .info{
+    float: left;
+    width: 530px;
+    height:  604px;
+}
+
+.detail-top .info-top{
+    width: 530px;
+    height: 72px;
+
+    padding-bottom: 15px;
+}
+
+.detail-top .title{
+    width: 530px;
+    padding-top: 20px;
+    padding-left: 15px;
+    font-size: 16px;
+    font-weight: bolder;   
+}
+
+.detail-top .ad{
+    padding-left: 15px;
+    color: #FF0036;
+}
+
+.detail-top .pce{
+    width: 510px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    color: #fff;
+    background-color: #2da77a;
+}
+
+.detail-top .pce .big{
+    font-size: 20px;
+    font-weight: bolder;
+    margin-right: 5px;
+}
+
+.detail-top .pce strong{
+    color: #f6cf46;
+}
+
+.detail-top .price{
+    width: 510px;
+    height: 46px;
+    font-size: 15px;
+    line-height: 46px;
+    padding-left: 15px;
+    margin-bottom: 5px;
+    background-color: #ecebeb;
+}
+
+.detail-top .price .num{
+    font-size: 30px;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+.detail-top .badge{
+    margin-left: 10px;
+    vertical-align: 50%;
+}
+
+.detail-top .freight{
+    width: 510px;
+    height: 37px;
+    line-height: 37px;
+    padding-left: 15px;
+    background-color: #f6cf46;
+}
+
+.detail-top .prompt{
+    margin-left: 28px;
+}
+
+.detail-top .weight{
+    width: 510px;
+    height: 24px;
+    padding-left: 15px;
+    line-height: 24px;
+    margin-bottom: 5px;
+}
+
+.detail-top .weight em{
+    margin-left: 28px;
+    margin-right: 5px;
+}
+
+
+
+.detail-top .SalesVolume{
+    width: 510px;
+    height: 38px;
+    border-top: #ecebeb 1px solid;
+    border-bottom: #ecebeb 1px solid;
+}
+
+.detail-top .SalesVolume .item{
+    float: left;
+    text-align: center;
+    margin-top: 10px;
+    width: 170px;
+    height: 16px;
+}
+
+.detail-top .SalesVolume .bdr{
+    border-left: #ecebeb 1px solid;
+    border-right: #ecebeb 1px solid;
+}
+
+.detail-top .quantity{
+    width: 500px;
+    height: 135px;
+    margin-left: 10px;
+    padding-top: 20px;
+}
+
+.detail-top .quantity input:focus{
+    outline: none;
+}
+
+.detail-top .quantity input{
+    width: 40px;
+    height: 30px;
+}
+
+.detail-top .quantity .inputNumber{
+    float: left;
+}
+
+.detail-top .quantity .btns{
+    float: left;
+    width: 22px;
+    height: 25px;
+}
+
+.detail-top .quantity .updown img{
+    display:inline-block;
+    vertical-align:top;
+}
+.detail-top .quantity .updown{
+    float: left;
+    border: 1px solid #999;
+    display: block;
+    width: 20px;
+    height: 13px;
+    text-align: center;
+    margin-left: 3px;
+    margin-bottom: 4px;
+    padding-top:4px;
+}
+
+.detail-top .quantity em{
+    float: left;
+    line-height: 30px;
+    padding-left: 15px;
+}
+
+.detail-top .panic-buy{
+    float: left;
+    width: 520px;
+    height: 50px; 
+    line-height: 50px;
+    padding-left: 20px;
+    margin-left: -10px;
+    background-color: #ffe0bc;
+}
+
+.detail-top .delivery-area{
+    width: 410px;
+    height: 36px;
+    margin-left: 6px;
+    margin-top: 150px;
+}
+
+main #product-banner{
+    width: 790px;
+    margin: 0 auto;
+}
+
+.detail-content{
+    width: 790px;
+    margin: 0 auto;
+    font-size: 0;
+}
+
+main .redBackground{
+    width: 790px;
+    height: 30px;
+    font-size: 14px;
+    margin: 20px auto 0 auto;
+    padding-left: 15px;
+    line-height: 30px;
+    color: #fff;
+    background-color: #FF0036;
+}
+
+main .evaluation{
+    width: 790px;
+    margin: 0 auto;
+    border: #999 1px solid;
+}
+
+main .comment{
+    width: 790px;
+    margin: 0 auto;
+}
+
+.comment .commentItem{
+    border-bottom: 1px solid #E3E3E3;
+    margin: 10px 0px;
+}
+
+.comment .commentItemDesc{
+    width: 80%;
+    float: left;
+    color: #333333;
+    margin: 5px 20px;
+
+}
+
+.comment .commentItemDate{
+    margin: 15px 0px 0px 0px;
+    color: #CCCCCC;
+}
+
+.comment .commentItemUserInfo{
+    color: #404040;
+    margin: 5px 20px;
+    padding: 20px 0;
+}
+
+.comment .anonymous{
+    color: #999999;
+}
+
+.comment .report{
+    margin-top: 50px;
+}
+
+main .afterSaleDiv {
+    width: 790px;
+    margin: 0 auto;
+}
+
+.afterSaleDiv .afterSale{
+    width: 790px;
+    margin: 0 auto;
+    border: #999 1px solid;
+}
+
+main .bottom{
+    width: 790px;
+    margin: 0 auto;
+    padding: 0 15px;
+    border: #ffcc7f 1px solid;
+    background-color: #ffffe5;
+    margin-top: 15px;
+}
+
+.bottom .prompt{
+    width: 760px;
+    padding: 15px 0;
+    border-bottom: #ffcc7f 1px solid;
+}
+
+.bottom .prompt dt{
+    float: left;
+    width: 100px;
+    height: 50px;
+}
+
+.bottom .statement{
+    width: 760px;
+    padding: 15px 0;
+}
+
+.bottom .statement dt{
+    float: left;
+    width: 100px;
+    height: 100px;
+}
+
+
+.footerhr{
+    width: 100%;
+    border-top: #000 1px solid;
+}
+

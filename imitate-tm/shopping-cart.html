@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/public.css">
+    <link rel="stylesheet" href="css/shopping-cat.css">
+    <script src="js/function.js"></script>
+    <script src="js/event.js"></script>
+    <title>我的购物车</title>
+</head>
+<body>
+    <nav class="top clearfloat">
+        <div class="center">
+            <p class="f-l"><em>喵，欢迎来天猫</em>
+                <a href="#">请登录</a>
+                <a href="#">免费注册</a>
+            </p>
+            <ul class="float-right">
+                <li id="mytb" class="top-item">
+                    <a  href="#">我的淘宝</a>
+                    <ul data-id="mytb" class="mytb-item">
+                        <li><a href="#">已买到的宝贝</a></li>
+                        <li><a href="#">已卖出的宝贝</a></li>
+                    </ul>
+                </li>
+                <li class="top-item"><a href="#">购物车<strong>0</strong>件</a></li>
+                <li id="mycot" class="top-item">
+                    <a href="#">收藏夹</a>
+                    <ul data-id="mycot" class="mycot-item">
+                        <li><a href="#">收藏的宝贝</a></li>
+                        <li><a href="#">收藏的店铺</a></li>
+                    </ul>
+                </li>
+                <li class="top-item">|</li> 
+                <li id="qrcode" class="top-item">
+                    <a href="#">手机版</a>
+                    <div data-id="qrcode" class="qrcode"><img src="image/qrCode.jpg" width="205px"></div>
+                </li>
+                <li class="top-item"><a href="#">淘宝网</a></li>
+                <li id="merchant" class="top-item">
+                    <a href="#">商家支持</a>
+                    <ul data-id="merchant" class="merchant-item">
+                        <li class="merchant-item-title">商家:</li>
+                        <li class="merchant-item-text">商家中心</li>
+                        <li class="merchant-item-text">天猫规则</li>
+                        <li class="merchant-item-text">商品入驻</li>
+                        <li class="merchant-item-text">运营服务</li>
+                        <li class="merchant-item-text">商家品控</li>
+                        <li class="merchant-item-text">商家工具</li>
+                        <li class="merchant-item-text">天猫智库</li>
+                        <li class="merchant-item-text">喵言喵语</li>
+                        <li>----------------------------</li>
+                        <li class="merchant-item-title">帮助：</li>
+                        <li class="merchant-item-text">帮助中心</li>
+                        <li class="merchant-item-text">问商友</li>
+                    </ul>
+                </li>
+                <li class="top-item"><a href="#">网站导航</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="headerCon">
+        <div class="tblogo"></div>
+        <div class="Search">
+            <input type="text">
+            <button class="search-btn" type="submit">搜索</button>
+        </div>
+    </div>
+        <div class="cartProduct-list" id="cartproduct">      
+            <div class="top-info">
+                <ul>
+                    <li class="info"><span>全部商品 &nbsp;{{ all }}</span></li>
+                    <li class="info"><a>降价商品<span>&nbsp;0</span></a></li>
+                    <li class="info">库存紧张<span>0</span></li>
+                    <li class="right">已选商品（不含运费）<span>{{ totalPrice }}</span><button class="Settlement-btn" :disabled="settlement">结算</button></li>
+                </ul>
+            </div>
+            <div class="cartProductTable" >
+                    <div>
+                        <div class="seleted-all">
+                            <input type="checkbox" :checked="isSelectAll" @click="selectAllProduct(isSelectAll)">
+                            全选
+                        </div>
+                        <div class="product-info-th">商品信息</div>
+                        <div class="price">单价</div>
+                        <div class="number">数量</div>
+                        <div class="money">金额</div>
+                        <div class="operating">操作</div>
+                    </div>
+                    <div class="classification clearfloat">
+                        <div class="shop">
+                            <input type="checkbox" :checked="isSelectAll" @click="selectAllProduct(isSelectAll)">
+                            店铺：美的空调官方旗舰店
+                        </div>
+                        <div class="product" v-for="(item, index) in items" :key="item.id">
+                            <div class="product-info clearfloat">
+                                <input type="checkbox" :checked="item.select" class="f-l" @click='item.select=!item.select'>
+                                <img :src="item.img" class="f-l">
+                                <div class="text">
+                                    <p>{{ item.name }}</p>
+                                    <br>
+                                    <img src="image/T1BCidFrNlXXaSQP_X-16-16.png">
+                                    <img src="image/T1Vyl6FCBlXXaSQP_X-16-16.png">
+                                    <img src="image/TB1.MK5a.WF3KVjSZPhXXXclXXa-16-16.png">
+                                    <img src="image/xcard.png">
+                                </div>
+                            </div>
+                            <div class="price">
+                                <p class="old-price">￥{{ item.oldPrice }}</p>
+                                <p>￥{{ item.price }}</p>
+                            </div>
+                            <div class="number">
+                                <a v-if="!item.hide" href="javaScrip:void(0);" class="a-border" @click='less(index)'>-</a>
+                                <input autocomplete="off" class="input-number" v-model="item.quantityt">
+                                <a href="javaScrip:void(0);" class="a-border" @click="item.quantityt++">+</a>
+                            </div>
+                            <div class="money orange-color">￥{{ item.price * item.quantityt }}</div>
+                            <div class="operating">
+                                <p>移入收藏夹</p>
+                                <a href="javaScrip:void(0);" style="color: #000" @click='deleteOneProduct(index)'>删除</a>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            <div class="foot-info clearfloat">
+                    <ul>
+                        <li class="info"><input type="checkbox" :checked="isSelectAll" @click="selectAllProduct(isSelectAll)">全选</li>
+                        <li class="info"  @click='deleteProduct'><a href="javaScrip:void(0);" style="color: #000">移除</a></li>
+                        <li class="info">移入收藏夹</li>
+                        <li class="info">分享</li>
+                        <li class="right"><button class="Settlement-btn" :disabled="settlement">结算</button></li>
+                        <li class="right">合计（不含运费）：<span>{{ totalPrice }}</span></li>
+                        <li class="right">已选商品<span>{{ selectedProduct }}</span>件</li>
+                    </ul>
+            </div>
+        </div>   
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="js/shopping-cart.js"></script>
+</body>
+</html>
