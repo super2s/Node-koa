@@ -1,0 +1,22 @@
+.ser-one {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.ser-one>p {
+    margin: 1rem;
+}
+
+.ser-one li div{
+    background-color: #f5f9ff;
+}
+
+.ser-one img {
+    width: 100%;
+}
+
+.ser-one h3 {
+    color: #ff4c53;
+    font-size: 2rem;
+    padding: 1rem;
+}

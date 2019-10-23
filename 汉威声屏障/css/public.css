@@ -1,0 +1,371 @@
+@media (min-width: 1500px) {
+    .container {
+        max-width: 1300px;
+    }
+}
+
+.fr {
+    float: right;
+}
+
+.fl {
+    float: left;
+}
+
+a {
+    color: #ff4c53;
+}
+
+.c-white {
+    color: #fff;
+}
+
+.c-red {
+    color: #EB0001;
+}
+
+.mb-30 {
+    margin-bottom: 30px;
+}
+
+.red-center {
+    text-align: center;
+    color: #EB0001;
+    font-size: 1rem;
+}
+
+.portal-wrap {
+    display: flex;
+    margin: 35px auto;
+    justify-content: space-between;
+}
+
+.portal-wrap li {
+    float: left;
+    width: 18%;
+    margin-left: 0.7rem;
+    padding: 12px 10px;
+    border: 1px solid #eee;
+}
+
+.title {
+    position: relative;
+    padding-left: 49px;
+    font-size: 24px;
+    color: #333;
+    font-weight: bold;
+    line-height: 40px;
+}
+
+.title i {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 40px;
+    height: 40px;
+    background: url("../images/index-icons.png") 0 0 no-repeat;
+}
+
+.title em {
+    position: absolute;
+    right: 3px;
+    top: 10px;
+    width: 19px;
+    height: 19px;
+    background: url("../images/index-icons.png") 0 -40px no-repeat
+}
+
+.info {
+    padding-left: 10px;
+    font-size: 14px;
+    margin-top: 6px;
+    color: #555;
+    line-height: 21px;
+}
+
+.protal-btn {
+    display: block;
+    width: 80%;
+    margin: 22px auto 0;
+    line-height: 30px;
+    text-align: center;
+    font-size: 14px;
+    color: #ff4c53;
+    border: 1px solid #ff4c53;
+    background: #fff4f5;
+    border-radius: 30px;
+}
+
+.title .pos1 {
+    background-position: 0 0;
+}
+
+.title .pos2 {
+    background-position: -40px 0;
+}
+
+.title .pos3 {
+    background-position: -80px 0;
+}
+
+.title .pos4 {
+    background-position: -120px 0;
+}
+
+.title .pos5 {
+    background-position: -160px 0;
+}
+
+.manufacturer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.manufacturer h2 {
+    color: #EB0001;
+    font-weight: bold;
+}
+
+.manufacturer p {
+    margin: 30px 0;
+}
+
+.manufacturer dt {
+    margin: 0 0 20px;
+}
+/* 虚线框部分 */
+.faq {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.faq div {
+    padding: 5px;
+}
+
+.faq h2 {
+    color: #EB0001;
+    font-weight: bold;
+    margin: 20px auto;
+}
+
+.faq .row p {
+    border: 1px dashed #ddd;
+    padding: 15px 5px;
+    font-size: 18px;
+    height: 80px;
+}
+
+.product-tab-1 {
+    display: block;
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.product-tab-1 a {
+    color: #000;
+}
+
+.product-tab-1 a:hover {
+    color: #EB0001;
+}
+
+.product-tab-1 h2 {
+    line-height: 45px;
+    font-size: 16px;
+}
+
+.product-tab-1 img {
+    width: 100%;
+    height: 14rem;
+}
+
+.homefour-bg {
+    position: relative;
+    width: 100%;
+    padding: 5% 0;
+    text-align: center;
+    background: url("../images/10398421458_1864305585.jpg") no-repeat;
+    background-size: cover;
+}
+
+.homefour-bg h2 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+}
+
+.hf-container {
+    height: 487px;
+    text-align: left;
+    background: url("../images/homefourbg02.png") no-repeat right top;
+    background-size: cover;
+}
+
+.hf-container p {
+    position: relative;
+    font-size: 18px;
+    margin-left: 9rem;
+    padding-top: 2rem;
+}
+
+.hf-container span {
+    font-size: 5rem;
+    font-weight: bold;
+    color: #EB0001;
+}
+
+.hf-container ul li {
+    float: left;
+    line-height: 20px;
+    text-align: center;
+    margin-right: 100px;
+    position: relative;
+    padding: 22px 10px;
+}
+
+.hf-container ul li:before, .hf-container ul li::after {
+    content: '';
+    position: absolute;
+    border-style: solid;
+    border-color: #cf2423;
+}
+
+.about-ban {
+    width: 100%;
+    background: url("../images/city-ban.jpg") no-repeat;
+    background-size: cover;
+    padding: 80px 0;
+    color: #fff;
+}
+
+.about-ban h3 {
+    font-size: 3rem;
+}
+
+.about-ban p {
+    font-size: 1.5rem;
+    line-height: 3rem;
+}
+
+.product-tab {
+    display: block;
+    text-align: center;
+}
+
+.product-tab ul {
+    display: none;
+}
+
+.product-tab .active {
+    display: flex;
+}
+
+.product-tab a {
+    color: #000;
+}
+
+.product-tab a:hover {
+    color: #EB0001;
+}
+
+.product-tab h2 {
+    line-height: 45px;
+    font-size: 16px;
+}
+
+.product-tab img {
+    width: 100%;
+    height: 14rem;
+}
+
+.title {
+    position: relative;
+    padding-left: 49px;
+    font-size: 24px;
+    color: #333;
+    font-weight: bold;
+    line-height: 40px;
+}
+
+.title i {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 40px;
+    height: 40px;
+    background: url("../images/index-icons.png") 0 0 no-repeat;
+}
+
+.title em {
+    position: absolute;
+    right: 3px;
+    top: 10px;
+    width: 19px;
+    height: 19px;
+    background: url("../images/index-icons.png") 0 -40px no-repeat
+}
+
+.info {
+    padding-left: 10px;
+    font-size: 14px;
+    margin-top: 6px;
+    color: #555;
+    line-height: 21px;
+}
+
+.protal-btn {
+    display: block;
+    width: 80%;
+    margin: 22px auto 0;
+    line-height: 30px;
+    text-align: center;
+    font-size: 14px;
+    color: #ff4c53;
+    border: 1px solid #ff4c53;
+    background: #fff4f5;
+    border-radius: 30px;
+}
+
+.title .pos1 {
+    background-position: 0 0;
+}
+
+.title .pos2 {
+    background-position: -40px 0;
+}
+
+.title .pos3 {
+    background-position: -80px 0;
+}
+
+.title .pos4 {
+    background-position: -120px 0;
+}
+
+.title .pos5 {
+    background-position: -160px 0;
+}
+
+.manufacturer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.manufacturer h2 {
+    color: #EB0001;
+    font-weight: bold;
+}
+
+.manufacturer p {
+    margin: 30px 0;
+}
+
+.manufacturer dt {
+    margin: 0 0 20px;
+}
+
+.product-tab h2 {
+    border-bottom: 4px solid #f2f2f2;
+    margin-bottom: 2rem;
+}
+

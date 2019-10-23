@@ -1,0 +1,123 @@
+a {
+    color: #000;
+}
+
+a:hover {
+    color: #EB0001;
+}
+
+
+.zxy-zl {
+    text-align: center;
+    padding: 3rem;
+}
+
+.zxy-zl h3 {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.zxy-zl p {
+    color: #666;
+    line-height: 2rem;
+}
+
+.zxy-zl-cont {
+    box-shadow: rgba(16, 25, 55, .1) 2px 2px 20px 3px;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 25px 36px;
+    position: relative;
+}
+.swiper-slide img {
+    width: 100%;
+}
+
+.zxy-mowei-top {
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.zxy-mowei-top img {
+    max-width: 100%;
+    padding-bottom: 2rem;
+}
+
+.zxy-mowei-top div {
+    border: 0;
+    border-radius: 10px;
+}
+
+.zxy-mowei {
+    background-color: #f7f7f7;
+    text-align: center;
+}
+
+.zxy-dibu {
+    box-shadow: rgba(16, 25, 55, .1) 2px 2px 20px 3px;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 25px 36px;
+    position: relative;
+    margin-bottom: 4rem;
+    text-align: center;
+} 
+
+.zxy-dibu li {
+    padding-bottom: 2rem;
+}
+
+.zxy-dibu img {
+    max-width: 100%;
+}
+
+.zxy-dibu h4 {
+    line-height: 4rem;
+}
+
+.news-q-list li {
+    border-bottom: 1px solid #eaeaea;
+    padding-bottom: 2rem;
+    margin: 2rem 2rem 0 0;
+
+}
+
+.news-q-list .data {
+    height: 5.2rem;
+    width: 80%;
+    text-align: center;
+    padding: 0;
+    background-color: #e9e9e9;
+    text-align: center;
+}
+
+.news-q-list .day {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.news-q-list h2 {
+    font-size: 1rem;
+    line-height: 2.5rem;
+}
+
+.news-q-list span {
+    font-size: 0.8rem;
+}
+
+.parameter img{
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.brief {
+    text-align: left;
+    clear: both;
+    border: 1.5px solid #a1a1a1;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 25px 25px 0 25px;
+    -moz-border-radius: 10px;
+    line-height: 25px;
+}

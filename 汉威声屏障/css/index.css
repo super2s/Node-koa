@@ -1,0 +1,479 @@
+@media (min-width: 1500px) {
+    .container {
+        max-width: 1300px;
+    }
+}
+
+a {
+    color: #000;
+}
+
+a:hover {
+    color: #EB0001;
+}
+
+/* 侧边栏 */
+
+.back-to-top1 {
+    position: fixed;
+    top: 15%;
+    right: 0;
+    z-index: 999;
+    width: 115px;
+}
+
+.right-fd {
+    display: none;
+    position: fixed;
+    bottom: 0%;
+    right: 5px;
+    text-align: center;
+    z-index: 999;
+}
+
+.consult, .tel, .home {
+    width: 5rem;
+    background-color: #FFF;
+    font-size: 0.8rem;
+    font-weight: bold;
+    padding: 1rem 0;
+    box-shadow: 0px 10px 100px rgba(3, 3, 3, 0.2);
+}
+
+.consult, .tel {
+    border-top: 1px solid #ccc;
+}
+
+.consult:hover, .tel:hover {
+    border-right: 3px solid #EB0001;
+}
+
+.tel {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.right-fd span {
+    display: block;
+}
+
+.popup {
+    position: absolute;
+    width: 0;
+    height: 6rem;
+    right: 0;
+    top: 0;
+    color: #fff;
+    font-size: 0.9rem;
+    font-weight: lighter;
+    text-align: left;
+    background-color: #252e3c;
+    transition:width 0.8s;
+    overflow: hidden;
+}
+
+.popup strong {
+    display: block;
+    color: #ff4c53;
+    font-size: 1.4rem;
+}
+
+.popup p {
+    white-space: nowrap;
+    overflow: hidden;
+    opacity: 0;
+    padding: 1rem 0 0 20%;
+    transition-duration: 1s;
+    transition-delay: 0.1s;
+}
+
+.tel:hover .popup {
+    width: 16.5rem;
+}
+
+.tel:hover .popup p {
+    opacity: 1;
+}
+
+/* 底部咨询弹窗 */
+.bottom-pop {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    z-index: 888;
+    opacity: 0;
+}
+
+.popup {
+    opacity: 1;
+}
+
+.pop-bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    z-index: 1;
+    background-color: #091e3b;
+    opacity: 0.8;
+}
+
+.middle {
+    position: relative;
+    width: 60rem;
+    height: 240px;
+    margin: 0 auto;
+    background-color: #091e3b;
+    color: #fff;
+    z-index: 9999;
+    text-align: center;
+    padding: 1rem;
+}
+
+@media (max-width: 768px) {
+    .cenNew-list p {
+        height: 3rem;
+        overflow: hidden;
+        white-space: nowrap;;
+        text-overflow: ellipsis;
+    }
+    .middle {
+        width: 100%;
+    }
+}
+
+.middle h5, .middle p {
+    font-weight: lighter;
+    line-height: 3rem;
+}
+
+.middle img {
+    width: 80%;
+}
+
+/* 导航栏顶部区域 */
+
+.back-to-top1 img {
+    display: block;
+    margin: 6px auto;
+    padding: 0px;
+}
+
+.top-bg {
+    background-color: #F4F4F4;
+}
+
+.top-propaganda {
+    display: flex;
+    height: 50px;
+    line-height: 50px;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.top-propaganda h1 {
+    display: inline;
+    font-size: 1rem;
+    line-height: 50px;
+    padding: 0;
+}
+
+.top-propaganda span {
+    font-size: 1rem;
+    padding: 0;
+}
+
+.top-logo, .top-tel {
+    display: inline-block;
+}
+
+.top {
+    display: flex;
+    margin: 15px auto 20px;
+    overflow: hidden;
+    justify-content: space-between;
+}
+
+/* 导航栏区域 */
+
+.navbg {
+    height: 63px;
+    line-height: 63px;
+    font-size: 16px;
+    text-align: center;
+    background: #182133;
+}
+
+.nav .active {
+    background-color: #EB0001;
+}
+
+.nav a {
+    display: inline-block;
+    width: 132px;
+    color: #fff;
+}
+
+.nav ul {
+    position: absolute;
+    display: none;
+    background-color: #182133;
+    white-space: nowrap;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.nav .active ul {
+    display: block;
+}
+
+.nav li:nth-child(4) li {
+    overflow: hidden;
+    width: 132px;
+    padding: 0 0 0 3px;
+}
+
+/* 产品卖点 */
+
+.portal-wrap {
+    display: flex;
+    margin: 35px auto;
+    justify-content: space-between;
+}
+
+.portal-wrap li {
+    float: left;
+    width: 18%;
+    margin-left: 0.7rem;
+    padding: 12px 10px;
+    border: 1px solid #eee;
+}
+
+
+
+
+/* 声障产品图 */
+
+.product-list {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.product-list h2 {
+    color: #EB0001;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.product-list ul {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.product-list li {
+    float: left;
+    width: 19%;
+    margin: 20px 0.2%;
+    line-height: 58px;
+    font-size: 1.3em;
+    background-color: #f4f4f4;
+    white-space: nowrap;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.product-list li a {
+    color: #000;
+}
+
+.product-list .active {
+    color: #fff;
+    background-color: #EB0001;
+}
+
+/* 产品宣传图 */
+
+.product-tab {
+    display: block;
+    text-align: center;
+}
+
+.product-tab ul {
+    display: none;
+}
+
+.product-tab .active {
+    display: flex;
+}
+
+.product-tab a {
+    color: #000;
+}
+
+.product-tab a:hover {
+    color: #EB0001;
+}
+
+.product-tab h2 {
+    line-height: 45px;
+    font-size: 16px;
+}
+
+.product-tab img {
+    width: 100%;
+    height: 14rem;
+}
+
+.equipment {
+    margin-top: 40px;
+}
+
+.equipment div {
+    padding: 10px 5px;
+}
+
+.equipment img {
+    width: 100%;
+}
+
+.text-bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.text-introduce {
+    position: absolute;
+    left: 5%;
+    top: 10%;
+}
+
+.text-introduce h4 {
+    margin-bottom: 20%;
+}
+
+.text-introduce a {
+    border: 1px solid #182133;
+    border-radius: 3px;
+    color: #000;
+    font-weight: bold;
+    padding: 3px;
+}
+
+/* 常见问题解答 */
+
+
+/* 技术文档和客户案例 */
+
+
+.cenNew-list h3 {
+    font-weight: bold;
+    margin-left: 1rem;
+}
+
+.data {
+    border: 1px solid #000;
+    height: 5.2rem;
+    width: 100%;
+    text-align: center;
+    padding: 0;
+}
+
+.data:hover {
+    border-color: #EB0001;
+    color: #EB0001;
+}
+
+.day {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.cenNew-list a {
+    font-size: 1.3rem;
+    margin-bottom: 5px;
+    color: #000;
+}
+
+.cenNew-list a:hover {
+    color: #EB0001;
+}
+
+.cenNew-list p {
+    height: 3rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+@media (min-width: 768px) {
+    .cenNew-list p {
+        height: 3rem;
+        overflow: hidden;
+        white-space: nowrap;;
+        text-overflow: ellipsis;
+    }
+}
+
+.customer-case img {
+    width: 100%;
+    height: 70%;
+}
+
+.customer-case {
+    height: 12rem;
+    overflow: hidden;
+}
+
+.customer-case p {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 2rem;
+}
+
+.customer-case p:hover {
+    color: #EB0001;
+}
+
+.video {
+    background: url("../images/shipinbj.jpg") no-repeat center;
+    height: 36rem;
+    padding: 40px 0 20px 20px;
+    ;
+}
+
+.video a {
+    font-weight: 600;
+    font-size: 1.4rem;
+}
+
+.video video {
+    margin-top: 1.5rem;
+}
+
+.fw-ys {
+    width: 100%;
+    background: url("../images/10424639937_1864305585.jpg") no-repeat;
+    background-size: cover;
+    padding: 5rem 0 10rem 0;
+    box-shadow: #dbdbdb 0px 10px 10px inset;
+    text-align: center;
+}
+
+.fw-ys h3 {
+    line-height: 9rem;
+    font-size: 3rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.text {
+    color: #8b8b8b;
+    margin-bottom: 4rem;
+}
+
+.fw-ys strong {
+    font-size: 3rem;
+}

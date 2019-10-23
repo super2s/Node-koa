@@ -1,0 +1,65 @@
+
+
+.contactone {
+    width: 100%;
+    background-size: cover;
+    overflow: hidden;
+    margin-bottom: 3rem;
+}
+
+.contactone1 {
+    margin-bottom: 3rem;
+}
+
+.contactone1top {
+    padding-left: 1rem;
+    border-left: 2px solid #ff1c17;
+    margin-bottom: 3rem;
+}
+
+.contactone1top h3 {
+    font-weight: bold;
+    padding-bottom: 1.5rem;
+}
+
+.contactone1 li {
+    position: relative;
+    padding-bottom: 2.8rem;
+}
+
+.contactone1 img {
+    width: 100%;
+}
+
+.contactone1box {
+    position: absolute;
+    width: 95%;
+    padding: 1rem;
+    overflow: hidden;
+}
+
+.contactone1tit {
+    line-height: 5rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.contactone1box img {
+    float: left;
+    width: 5rem;
+}
+
+.contactone1txt {
+    height: 6rem;
+}
+
+.contactone1txt::after {
+    content: '';
+    width: 78px;
+    height: 3px;
+    position: absolute;
+    right: 50px;
+    bottom: 0;
+    background: #ff1c16;
+}
